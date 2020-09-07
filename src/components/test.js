@@ -9,7 +9,7 @@ export default function Test(props) {
     return (
             <button
                 onClick={() => props.toggleLang(langContext)}>
-                {langContext == 'en' ? 'EN' : 'ਪੰਬ'}
+                {langContext === 'en' ? 'EN' : 'ਪੰਬ'}
             </button>
     );
         
