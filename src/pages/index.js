@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Test from '../components/test'
+import {MenuIcon} from '../utils/icons';
 
 export const LanguageContext = React.createContext();
 
@@ -9,7 +10,7 @@ const IndexPage = () => {
   const toggleLang = lang => lang === 'en' ? setLang('pb') : setLang('en');
   return (
     <LanguageContext.Provider value={lang}>
-      <Test toggleLang={toggleLang}/>
+      <MenuIcon/>
     </LanguageContext.Provider>
   );}
 

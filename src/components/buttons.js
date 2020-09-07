@@ -3,7 +3,7 @@ import tw from "twin.macro"; // , { styled }
 
 import { LanguageContext } from '../pages/index';
 
-const BlackButton = tw.button`
+export const BlackButton = tw.button`
 bg-transparent  text-black font-semibold py-2 px-2
 hover:bg-black hover:text-white hover:border-transparent 
 border border-black rounded
