@@ -1,11 +1,15 @@
 import React, { useContext } from 'react';
 //import tw, { styled } from "twin.macro";
 
-import {LanguageSelector} from './buttons';
+import {SectionSelector} from './buttons';
 
 export default function Test(props) {
     return (
-    <LanguageSelector toggleLang={props.toggleLang}/>
+        <div>
+            <SectionSelector text="About Me" selected={false} onclick={()=>{}}/>
+            <SectionSelector text="Drip Irrigation" selected={false} onclick={()=>{}}/>
+            <SectionSelector text="Tissue Culture" selected={false} onclick={()=>{}}/>
+        </div>
     );
         
 }
