@@ -1,6 +1,7 @@
 import React from 'react'
 
-import Test from '../components/test'
+//import Test from '../components/test'
+import Header from '../components/header';
 
 export const LanguageContext = React.createContext();
 
@@ -9,8 +10,9 @@ const IndexPage = () => {
   const toggleLang = lang => lang === 'en' ? setLang('pb') : setLang('en');
   return (
     <LanguageContext.Provider value={lang}>
-      <Test toggleLang={toggleLang}/>
+      <Header toggleLang={toggleLang}/>
     </LanguageContext.Provider>
-  );}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
