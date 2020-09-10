@@ -11,14 +11,14 @@ const BlackOutline = tw.button`
 `; // Maybe remove the transition duration-300
 
 const Selected = tw(BlackOutline)`
-    bg-black border-transparent text-white hover:bg-black hidden md:block
+    bg-black border-transparent text-white hover:bg-black
 `;
 
 const Language = tw(BlackOutline)`hover:bg-black border sm:mx-4`;// bg-indigo-900
 
 const Contact = tw.button`
     bg-purple-700 hover:bg-purple-600 text-gray-100 font-bold py-2 px-4
-    rounded-full mx-4 hover:text-black border-4 border-black hidden md:block
+    rounded-full mx-4 hover:text-black border-4 border-black
 `;
 
 export function LanguageSelector(props) {
