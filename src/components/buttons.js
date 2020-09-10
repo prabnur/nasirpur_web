@@ -5,20 +5,20 @@ import { Link } from 'gatsby';
 import { LanguageContext } from '../pages/index';
 
 const BlackOutline = tw.button`
-    bg-transparent  text-black font-semibold py-2 px-3
+    bg-transparent  text-black font-semibold py-2 px-3 mx-4
     hover:bg-purple-800 hover:text-white hover:border-transparent 
-    border border-black rounded-lg border-2 transition duration-300
+    rounded-lg border border-black border-2
 `; // Maybe remove the transition duration-300
 
 const Selected = tw(BlackOutline)`
-    bg-black border-transparent text-white hover:bg-black
+    bg-black border-transparent text-white hover:bg-black hidden md:block
 `;
 
-const Language = tw(BlackOutline)`hover:bg-black border`;// bg-indigo-900
+const Language = tw(BlackOutline)`hover:bg-black border sm:mx-4`;// bg-indigo-900
 
 const Contact = tw.button`
-    bg-purple-700 hover:bg-purple-600 text-white font-bold py-2 px-4
-    rounded-full hocus:text-gray-200 focus:shadow-outline
+    bg-purple-700 hover:bg-purple-600 text-gray-100 font-bold py-2 px-4
+    rounded-full mx-4 hover:text-black border-4 border-black hidden md:block
 `;
 
 export function LanguageSelector(props) {
@@ -37,4 +37,4 @@ export function SectionSelector(props) {
     <Link to={props.link}><BlackOutline onClick={props.selectMe}>{props.text}</BlackOutline></Link>
     );
 }
-export const ContactUsButton = (props) => <Link to={props.link}><Contact onClick={props.selectMe}>Contact Us</Contact></Link>;
+export const ContactUs = (props) => <Link to={props.link}><Contact onClick={props.selectMe}>Contact Us</Contact></Link>;
