@@ -1,4 +1,6 @@
-import { Link } from 'gatsby';
 import React from 'react'
-const TissueCulture = () => (<Link to='/index/'>Index</Link>);
+
+import Header from '../components/header';
+
+const TissueCulture = () => (<Header section="TC"/>);
 export default TissueCulture;

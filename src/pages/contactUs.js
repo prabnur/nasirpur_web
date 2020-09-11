@@ -1,4 +1,6 @@
-import { Link } from 'gatsby';
 import React from 'react'
-const ContactUs = () => (<Link to='/index/'>Index</Link>);
+
+import Header from '../components/header';
+
+const ContactUs = () => (<Header section="CO"/>);
 export default ContactUs;

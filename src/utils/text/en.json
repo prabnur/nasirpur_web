@@ -1,3 +1,10 @@
 {
-    "option": "English"
+    "language": "English",
+    "option": "English",
+    "buttonText": {
+        "AM": "About Me",
+        "CO": "Contact Us",
+        "DI": "Drip Irrigation",
+        "TC": "Tissue Culture"
+    }
 }

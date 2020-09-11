@@ -24,31 +24,31 @@ const Desktop = tw.nav`
   flex flex-1 justify-between items-center
 `;
 
-export default ({ toggleLang, section }) => {
+export default ({ section }) => {
   const isDesktop = useMediaQuery({ minWidth: 864 });
   const [showModal, setShowModal] = React.useState(false);
   const dismissModal = () => setShowModal(false);
 
-  return (<div>
+  return (<>
     <Header>
       {(isDesktop &&
       <Desktop>
-        <LanguageSelector toggleLang={toggleLang}/>
+        <LanguageSelector/>
         <Horizontal key={1}>
           <SectionSelector
-            text='About Me'
-            link='/aboutMe/'
-            selected={section === 'About Me'}
+            btOption='AM'
+            link='/'
+            selected={section === 'AM'}
           />
           <SectionSelector
-            text='Drip Irrigation'
+            btOption='DI'
             link='/dripIrrigation/'
-            selected={section === 'Drip Irrigation'}
+            selected={section === 'DI'}
           />
           <SectionSelector
-            text='Tissue Culture'
+            btOption='TC'
             link='/tissueCulture/'
-            selected={section === 'Tissue Culture'}
+            selected={section === 'TC'}
           />
         </Horizontal>
         <ContactUs link='/contactUs/' key={2}/>
@@ -57,7 +57,7 @@ export default ({ toggleLang, section }) => {
 
       {(!isDesktop &&
       <Mobile>
-        <LanguageSelector toggleLang={toggleLang}/>
+        <LanguageSelector/>
         <IconButton onClick={() => setShowModal(true)}>
           {showModal ? <CloseIcon/> : <MenuIcon/>}
         </IconButton>
@@ -74,24 +74,24 @@ export default ({ toggleLang, section }) => {
       width={234}
     >
       <SectionSelectorModal
-        text='About Me'
-        link='/aboutMe/'
-        selected={section === 'About Me'}
+        btOption='AM'
+        link='/'
+        selected={section === 'AM'}
         dismissModal={dismissModal}
       />
       <SectionSelectorModal
-        text='Drip Irrigation'
+        btOption='DI'
         link='/dripIrrigation/'
-        selected={section === 'Drip Irrigation'}
+        selected={section === 'DI'}
         dismissModal={dismissModal}
       />
       <SectionSelectorModal
-        text='Tissue Culture'
+        btOption='TC'
         link='/tissueCulture/'
-        selected={section === 'Tissue Culture'}
+        selected={section === 'TC'}
         dismissModal={dismissModal}
       />
       <ContactUsModal link='/contactUs/' key={2}/>
     </Modal>
-  </div>);
+  </>);
 };
