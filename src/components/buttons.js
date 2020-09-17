@@ -16,11 +16,11 @@ const Selected = tw(BlackOutline)`
 `;
 const SelectedModal = tw(Selected)`my-3`;
 
-const Language = tw(BlackOutline)`bg-black border-transparent text-white hover:bg-black w-20 sm:mx-4`;// bg-indigo-900
+const Language = tw(BlackOutline)`text-black hover:border-transparent hover:text-white hover:bg-black w-20 sm:mx-4`;// bg-indigo-900
 
 const Contact = tw.button`
   bg-purple-700 hover:bg-purple-600 text-gray-100 font-bold py-1 px-4
-  rounded-full mx-4 hover:text-black border-4 border-black w-32 h-10
+  rounded-full mx-4 hover:text-black border-4 border-black w-32 h-12
 `;
 const ContactModal = tw(Contact)`my-3`;
 
