@@ -19,6 +19,7 @@ irvingTheme.googleFonts = [
     },
 ]
 irvingTheme.headerFontFamily = ["Exo 2", "sans-serif"]
+irvingTheme.scaleRatio = 5;
 export default Typography(irvingTheme)
 
 /*
