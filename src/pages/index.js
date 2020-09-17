@@ -19,6 +19,7 @@ const IndexPage = () => {
   return (<>
     <Header section="AM"/>
     <Img fluid={aboutMeBG.placeholderImage.childImageSharp.fluid} />
+    <h1>Hi, </h1>
   </>);
 }
 

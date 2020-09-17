@@ -9,7 +9,7 @@ import { ContactUs, ContactUsModal, LanguageSelector, SectionSelector, SectionSe
 
 const Header = tw.header`
   flex justify-between items-center
-  max-w-full mx-auto py-3 bg-gray-200
+  max-w-full mx-auto py-3 bg-teal-200
 `;
 const Horizontal = tw.span`inline-flex`;
 
