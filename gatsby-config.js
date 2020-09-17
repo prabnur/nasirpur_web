@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Nasirpur Farms Website`,
-    description: `A website for Paramjit Bal, owner of Nasirpur Farms`,
-    author: `Prabnur Bal`,
+    description: `Website for Nasirpur Farms which offers custom Drip Irrigation solutions and Plant Tissue Culture solutions`,
+    author: `Paramjit Bal`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -37,6 +37,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-emotion`,
-    'gatsby-plugin-antd'
+    `gatsby-plugin-antd`,
   ],
 }
