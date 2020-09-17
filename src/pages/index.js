@@ -1,24 +1,25 @@
 import React from 'react'
-//import { graphql, useStaticQuery } from 'gatsby';
-//import Img from "gatsby-image";
+import { graphql, useStaticQuery } from 'gatsby';
+import Img from "gatsby-image";
 
-import Menu from '../components/header';
+import Header from '../components/header';
 
 const IndexPage = () => {
-  /*
-  const data = useStaticQuery(graphql`
-  query {
-    placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+  const aboutMeBG = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "aboutMe.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(quality: 100, maxWidth: 1920) {
             ...GatsbyImageSharpFluid
           }
         }
       }
     }
-  `)*/
-  return (
-      <Menu section="AM"/>);
+  `)
+  return (<>
+    <Header section="AM"/>
+    <Img fluid={aboutMeBG.placeholderImage.childImageSharp.fluid} />
+  </>);
 }
 
 export default IndexPage;
