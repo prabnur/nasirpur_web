@@ -1,9 +1,8 @@
-import React, { useContext } from 'react'
-import { graphql, useStaticQuery, StaticQuery } from 'gatsby';
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby';
 
-import tw from 'twin.macro';
+// import tw from 'twin.macro';
 
-import { GetText } from '../utils/text/textProvider';
 import Header from '../components/header';
 import BackgroundImageFull from '../components/background-image-full';
 
@@ -14,18 +13,21 @@ import BackgroundImageFull from '../components/background-image-full';
 //   <span tw='bg-indigo-700 w-10 h-10 m-3 block'/>
 // </div>
 
-const CenteredText = tw.h1`block my-4 text-center`;
-const JustifiedText = tw.h2`block my-4 text-justify`;
-const Mobile = () =>
-  <div tw='flex-auto'>
-    <CenteredText>{Text['iAm']}</CenteredText>
-    {Text['statements'].map((statement) => 
-      <JustifiedText>{statement}</JustifiedText>)}
-  </div>;
+// import { GetText } from '../utils/text/textProvider';
+// const JustifiedText = tw.li`block my-4 text-justify`;
+// const Maybe = () =>
+//   <div tw='flex-auto'>
+//     <h1>{Text['hi']}</h1>
+//     <h2>{Text['intro']}</h2>
+//     <ul>
+//       {Text['statements'].map((statement) => 
+//         <JustifiedText>{statement}</JustifiedText>)}
+//     </ul>
+//   </div>;
 
 const AboutMe = () => {
-  const getText = useContext(GetText);
-  const Text = getText('aboutMe')
+  // const getText = useContext(GetText);
+  // const Text = getText('aboutMe')
 
   const imgData = useStaticQuery(graphql`
     query {

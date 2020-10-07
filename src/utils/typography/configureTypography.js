@@ -12,8 +12,9 @@ irvingTheme.googleFonts = [
     },
 ]
 irvingTheme.headerFontFamily = ["Exo 2", "sans-serif"]
-irvingTheme.scaleRatio = 5;
+irvingTheme.scaleRatio = 2.8;
 const TypographyGen = Typography(irvingTheme)
 
 const writeFile = require('fs').writeFile;
-writeFile('typography.css', TypographyGen.createStyles(), (err) => {});
+writeFile('./src/utils/typography/typography.css', TypographyGen.createStyles(), (err) => {if(err) console.log(err)});
+console.log('Typography Updated')
