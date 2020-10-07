@@ -6,7 +6,7 @@ import { ChangeLanguage, GetText } from '../utils/text/textProvider';
 
 const BlackOutline = tw.button`
   bg-white  text-black font-semibold py-1 px-3 mx-4
-  hover:bg-purple-800 hover:text-white hover:border-transparent 
+  hover:(bg-purple-800 text-white border-transparent) 
   rounded-lg border border-black border-2 w-32 h-10
 `; // Maybe remove the transition duration-300
 const BlackOutlineModal = tw(BlackOutline)`my-3`;
@@ -20,7 +20,7 @@ const Language = tw(BlackOutline)`text-black hover:border-transparent hover:text
 
 const Contact = tw.button`
   bg-purple-700 hover:bg-purple-600 text-gray-100 font-bold py-1 px-4
-  rounded-full mx-4 hover:text-black border-4 border-black w-32 h-12
+  rounded-full mx-4 hover:text-black border-4 border-black w-32 h-12 mr-8
 `;
 const ContactModal = tw(Contact)`my-3`;
 

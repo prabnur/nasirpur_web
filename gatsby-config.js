@@ -18,11 +18,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Nasirpur Farms`,
+        short_name: `Nasirpur`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
+        useMozJpeg: true, // Build time increase!
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
@@ -32,5 +33,12 @@ module.exports = {
     // `gatsby-plugin-offline`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-antd`,
+    {
+      resolve: 'gatsby-background-image',
+      options: {
+        // add your own characters to escape, replacing the default ':/'
+        specialChars: '/:',
+      },
+    },
   ],
 }

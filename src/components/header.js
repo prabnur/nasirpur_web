@@ -8,8 +8,8 @@ import { CloseIcon, MenuIcon } from "../utils/icons";
 import { ContactUs, ContactUsModal, LanguageSelector, SectionSelector, SectionSelectorModal } from './buttons';
 
 const Header = tw.header`
-  flex justify-between items-center
-  max-w-full mx-auto py-3 bg-teal-200
+  justify-between items-center
+  max-w-full mx-auto py-3 bg-transparent w-screen
 `;
 const Horizontal = tw.span`inline-flex`;
 
