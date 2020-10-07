@@ -5,7 +5,7 @@ import tw from "twin.macro";
 import { Modal } from 'antd';
 
 import { CloseIcon, MenuIcon } from "../utils/icons";
-import { ContactUs, ContactUsModal, LanguageSelector, SectionSelector, SectionSelectorModal } from './buttons';
+import { MobileButton, ContactUs, ContactUsModal, LanguageSelector, SectionSelector, SectionSelectorModal } from './buttons';
 
 const Header = tw.header`
   justify-between items-center
@@ -13,8 +13,8 @@ const Header = tw.header`
 `;
 const Horizontal = tw.span`inline-flex`;
 
-const Mobile = tw(Horizontal)`flex-1 justify-between items-center`;
-const IconButton = tw.button`z-20 focus:outline-none text-black`;
+const Mobile = tw(Horizontal)`flex justify-between items-center`;
+
 const modalStyle = {
   borderRadius: "50px",
   textAlign: "center"
@@ -58,9 +58,9 @@ export default ({ section }) => {
       {(!isDesktop &&
       <Mobile>
         <LanguageSelector/>
-        <IconButton onClick={() => setShowModal(true)}>
+        <MobileButton onClick={() => setShowModal(true)}>
           {showModal ? <CloseIcon/> : <MenuIcon/>}
-        </IconButton>
+        </MobileButton>
       </Mobile>)}
     </Header>
     

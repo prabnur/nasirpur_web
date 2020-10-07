@@ -12,7 +12,6 @@ irvingTheme.googleFonts = [
     },
 ]
 irvingTheme.headerFontFamily = ["Exo 2", "sans-serif"]
-irvingTheme.scaleRatio = 2.8;
 const TypographyGen = Typography(irvingTheme)
 
 const writeFile = require('fs').writeFile;

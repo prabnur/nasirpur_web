@@ -1,10 +1,20 @@
 {
     "language": "English",
-    "option": "ਪੰਜਾਬੀ",
+    "option": "ਪੰਜ",
     "buttonText": {
         "AM": "About Me",
         "CO": "Contact Us",
         "DI": "Drip Irrigation",
         "TC": "Tissue Culture"
+    },
+    "aboutMe": {
+        "greeting_notused": "Hello",
+        "intro": "I am Paramjit Singh Bal",
+        "occupations_notused": "Agriculturist",
+        "here": "Here at Nasirpur,",
+        "statements": [
+            "We operate a cuting-edge Tissue Culture Lab",
+            "We create custom-tailored Drip Irrigation Solutions"
+        ]
     }
 }
