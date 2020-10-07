@@ -8,7 +8,7 @@ import { ChangeLanguage, GetText } from '../utils/text/textProvider';
 const BlackOutline = tw.button`
   bg-white text-black font-semibold py-1 px-3 mx-4
   hover:(bg-purple-800 text-white border-transparent) 
-  rounded-lg border border-black border-3 w-32 h-10
+  rounded-lg border border-black border-3 w-40 h-12 text-lg
 `; // Maybe remove the transition duration-300
 const BlackOutlineModal = tw(BlackOutline)`my-3`;
 

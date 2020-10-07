@@ -7,12 +7,12 @@ import { GetText } from '../utils/text/textProvider';
 import Header from '../components/header';
 import BackgroundImageFull from '../components/background-image-full';
 
-const Test = () =>
-<div tw='bg-gray-400 flex-auto items-start'>
-  <span tw='bg-indigo-700 w-12 h-12 m-3 block'/>
-  <span tw='bg-teal-700 w-full h-16 m-3 block float-right'/>
-  <span tw='bg-indigo-700 w-10 h-10 m-3 block'/>
-</div>
+// const Test = () =>
+// <div tw='bg-gray-400 flex-auto items-start'>
+//   <span tw='bg-indigo-700 w-12 h-12 m-3 block'/>
+//   <span tw='bg-teal-700 w-full h-16 m-3 block float-right'/>
+//   <span tw='bg-indigo-700 w-10 h-10 m-3 block'/>
+// </div>
 
 const TextPiece = tw.h2`block my-4`;
 
