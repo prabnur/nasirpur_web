@@ -14,7 +14,7 @@ import BackgroundImageFull from '../components/background-image-full';
 //   <span tw='bg-indigo-700 w-10 h-10 m-3 block'/>
 // </div>
 
-const TextPiece = tw.h2`block my-4`;
+const TextPiece = tw.h2`block my-12`;
 
 const AboutMe = () => {
   const getText = useContext(GetText);
@@ -37,8 +37,8 @@ const AboutMe = () => {
       <Header section='AM'/>
     </BackgroundImageFull>
     <div tw='flex-auto text-center mt-24'>
+    <h1 tw="block my-12">{Text['greeting']}</h1>
       <TextPiece>{Text['intro']}</TextPiece>
-      <TextPiece>{Text['here']}</TextPiece>
         {Text['statements'].map((statement) => 
           <TextPiece>{statement}</TextPiece>)}
     </div>

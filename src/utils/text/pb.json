@@ -8,10 +8,9 @@
         "TC": "ਟਿਸ਼ੂ ਕਲਚਰ"
     },
     "aboutMe": {
-        "greeting_notused": "Hello",
-        "intro": "I am Paramjit Singh Bal",
+        "greeting": "Welcome",
+        "intro": "I am Paramjit Singh Bal, an Agriculturist. Here at Nasirpur Farms:",
         "occupations_notused": "Agriculturist",
-        "here": "Here at Nasirpur,",
         "statements": [
             "We operate a cuting-edge Tissue Culture Lab",
             "We create custom-tailored Drip Irrigation Solutions"

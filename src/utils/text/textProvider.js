@@ -23,8 +23,11 @@ const TextContextProvider = ({children}) => {
     const getText = (key) => languageText[lang][key];
     return( 
       <GetText.Provider value={getText}>
-          <ChangeLanguage.Provider value={toggleLang}>{children}</ChangeLanguage.Provider>
-      </GetText.Provider>);
+          <ChangeLanguage.Provider value={toggleLang}>
+            {children}
+          </ChangeLanguage.Provider>
+      </GetText.Provider>
+    );
 }
 
 export default TextContextProvider;
