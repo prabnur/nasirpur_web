@@ -9,11 +9,25 @@
     },
     "aboutMe": {
         "greeting": "Welcome",
-        "intro": "I am Paramjit Singh Bal, an Agriculturist. Here at Nasirpur Farms:",
+        "intro": "I am Paramjit Singh Bal, an Agriculturist.",
+        "credentials": "",
+        "mission-statement": "",
         "occupations_notused": "Agriculturist",
         "statements": [
             "We operate a cuting-edge Tissue Culture Lab",
             "We create custom-tailored Drip Irrigation Solutions"
         ]
+    },
+    "dripIrrigation": {
+        "title": [ "Custom", "Tailored" ]
+    },
+    "tissueCulture": {
+        "title": [ "Cutting", "Edge" ],
+        "points": [
+            "Disease free propogation of planting metances(ask)",
+            "Quick spread of a new culture over a wise area",
+            "We can help hybrid seed producers in multiplying pure lines"
+        ],
+        "plants-available": ["Strawberry", "Banana", "Potato Minitubers", "Potato Microtubers", "Sugarcane"]
     }
 }

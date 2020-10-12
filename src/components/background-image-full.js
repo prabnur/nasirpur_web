@@ -2,10 +2,11 @@ import React from 'react'
 import BackgroundImage from 'gatsby-background-image'
 import tw from 'twin.macro';
 
-const BackgroundImageFull = ({ children, data, title }) => (
+const BackgroundImageFull = ({ children, fluid, fixed, title }) => (
   <div tw="w-full h-screen flex overflow-hidden">
     <BackgroundImage
-      fluid={data.file.childImageSharp.fluid}
+      fluid={fluid}
+      fixed={fixed}
       backgroundColor={`#040e18`}
       title={title}
       preserveStackingContext={true}

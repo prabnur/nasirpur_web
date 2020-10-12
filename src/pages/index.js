@@ -33,7 +33,7 @@ const AboutMe = () => {
   `)
 
   return <>
-    <BackgroundImageFull data={imgData} title="Paramjit Singh Bal">
+    <BackgroundImageFull fluid={imgData.file.childImageSharp.fluid} title="Paramjit Singh Bal">
       <Header section='AM'/>
     </BackgroundImageFull>
     <div tw='flex-auto text-center mt-24'>
