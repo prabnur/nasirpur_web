@@ -28,8 +28,8 @@ const Language = tw(BlackOutline)`text-black hover:border-transparent hover:text
 export const MobileButton = tw(Language)`h-16 w-16 text-2xl mx-4`
 
 const Contact = tw.button`
-  bg-purple-700 hover:bg-purple-600 text-gray-100 font-bold py-1 px-4
-  rounded-full mx-4 hover:text-black border-4 border-black w-32 h-12 mr-8
+  bg-purple-700 hover:bg-purple-600 text-gray-100 font-bold py-1 px-4 text-lg
+  rounded-full mx-4 hover:text-black border-4 border-black w-40 h-12 mr-8
 `;
 const ContactModal = tw(Contact)`my-3`;
 
