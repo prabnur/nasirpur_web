@@ -13,7 +13,6 @@ import {
   SectionSelector,
   SectionSelectorModal
 } from './buttons';
-import { mobileBreakpoint } from '../utils/breakpoint'; 
 
 const Header = tw.header`
   justify-between items-center
@@ -33,7 +32,7 @@ const Desktop = tw.nav`
 `;
 
 export default ({ section }) => {
-  const isDesktop = useMediaQuery({ minWidth: mobileBreakpoint });
+  const isDesktop = useMediaQuery({ minWidth: 864 });
   const [showModal, setShowModal] = React.useState(false);
   const dismissModal = () => setShowModal(false);
 
