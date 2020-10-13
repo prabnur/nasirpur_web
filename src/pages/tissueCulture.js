@@ -9,6 +9,11 @@ import Card from '../components/picture-text';
 
 const Content = tw.div`mt-16`;
 
+const TextHighlight = tw.div`bg-white px-4 transform -skew-x-12 float-left overflow-auto`;
+const TitlePiece = ({ children }) => (
+  <TextHighlight><h1 tw="text-green-900">{children}</h1></TextHighlight>
+);
+
 const TissueCulture = () => {
   const { bg, df, qs, sp} = useStaticQuery(
     graphql`query {
@@ -20,7 +25,7 @@ const TissueCulture = () => {
         }
       }
 
-      df: file(relativePath: { eq: "disease-free.jpg" }) {
+      df: file(relativePath: { eq: "inspection-cropped.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 400, maxHeight: 400, quality: 90) {
             ...GatsbyImageSharpFluid_withWebp
@@ -79,6 +84,8 @@ const TissueCulture = () => {
   return (<>
     <BackgroundImageFull fluid={bg.childImageSharp.fluid} title="TissueCultureBG">
       <Header section='TC'/>
+      <TextHighlight tw="mt-32 ml-16"><h1 tw="text-green-900">{text['title'][0]}</h1></TextHighlight>
+      <TextHighlight tw="mt-8 ml-20 sm:mt-17rem sm:-ml-6"><h1 tw="text-green-900">{text['title'][1]}</h1></TextHighlight>
     </BackgroundImageFull>
     <div tw="relative">
       <Content>

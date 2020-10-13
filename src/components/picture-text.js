@@ -8,7 +8,7 @@ const Card = styled.div(({ reversed }) => [
 ]);
 
 const Image = tw(BackgroundImage)`
-  rounded md:w-1/2 lg:w-5/12 xl:w-1/3 md:h-144
+  rounded md:w-7/12 lg:w-6/12 xl:w-5/12 md:h-144
   h-80 flex-shrink-0 bg-cover bg-center
   mx-4 sm:mx-8 md:mx-4 lg:mx-8
 `;
@@ -17,7 +17,7 @@ const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
 const Title = tw.h3`text-3xl font-bold text-gray-900`;
 const Subtitle = styled.div(({ om, tm }) => [
   tw`font-bold tracking-wide text-xl`,
-  om && tw`text-green-700`,
+  om && tw`text-green-900`,
   tm && tw`text-purple-700`,
 ]);
 const Description = tw.p`mt-2 text-xl leading-loose`;
