@@ -1,10 +1,13 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby';
+import tw from 'twin.macro';
 
 import BackgroundImageFull from '../components/background-image-full';
 import Header from '../components/header';
 import { GetText } from '../utils/text/textProvider';
-import { PictureWithText, TextWithPicture } from '../components/picture-text';
+import Card from '../components/picture-text';
+
+const Content = tw.div`mt-16`;
 
 const TissueCulture = () => {
   const { bg, df, qs, sp} = useStaticQuery(
@@ -46,25 +49,44 @@ const TissueCulture = () => {
   const getText = React.useContext(GetText);
   const text = getText('tissueCulture')
 
+  const cards = [
+    {
+      fluid: df.childImageSharp.fluid,
+      title: text['points']['df']['title'],
+      subtitleTM: text['tm'],
+      descriptionTM: text['points']['df']['-'],
+      subtitleOM: text['om'],
+      descriptionOM: text['points']['df']['+']
+    },
+    {
+      fluid: qs.childImageSharp.fluid,
+      title: text['points']['qs']['title'],
+      subtitleTM: text['tm'],
+      descriptionTM: text['points']['qs']['-'],
+      subtitleOM: text['om'],
+      descriptionOM: text['points']['qs']['+']
+    },
+    {
+      fluid: sp.childImageSharp.fluid,
+      title: text['points']['sp']['title'],
+      subtitleTM: text['tm'],
+      descriptionTM: text['points']['sp']['-'],
+      subtitleOM: text['om'],
+      descriptionOM: text['points']['sp']['+']
+    }
+  ];
+
   return (<>
     <BackgroundImageFull fluid={bg.childImageSharp.fluid} title="TissueCultureBG">
       <Header section='TC'/>
     </BackgroundImageFull>
-    <PictureWithText 
-      fluid={df.childImageSharp.fluid}
-      title={text['points']['df']['title']}
-      body={[text['tm'], text['points']['df']['-'], text['om'], text['points']['df']['+']]}
-    />
-    <TextWithPicture
-      fluid={qs.childImageSharp.fluid}
-      title={text['points']['qs']['title']}
-      body={[text['tm'], text['points']['qs']['-'], text['om'], text['points']['qs']['+']]}
-    />
-    <PictureWithText
-      fluid={sp.childImageSharp.fluid}
-      title={text['points']['sp']['title']}
-      body={[text['tm'], text['points']['sp']['-'], text['om'], text['points']['sp']['+']]}
-    />
+    <div tw="relative">
+      <Content>
+        <Card key={0} card={cards[0]}/>
+        <Card key={1} reversed card={cards[1]}/>
+        <Card key={2} card={cards[2]}/>
+      </Content>
+    </div>
   </>)
 }
 export default TissueCulture;
