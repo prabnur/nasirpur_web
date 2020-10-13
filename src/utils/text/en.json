@@ -1,33 +1,47 @@
 {
-    "language": "English",
-    "option": "ਪੰਜ",
-    "buttonText": {
-        "AM": "About Me",
-        "CO": "Contact Us",
-        "DI": "Drip Irrigation",
-        "TC": "Tissue Culture"
+  "language": "English",
+  "option": "ਪੰਜ",
+  "buttonText": {
+    "AM": "About Me",
+    "CO": "Contact Us",
+    "DI": "Drip Irrigation",
+    "TC": "Tissue Culture"
+  },
+  "aboutMe": {
+    "greeting": "Welcome",
+    "intro": "I am Paramjit Singh Bal, an Agriculturist.",
+    "credentials": "",
+    "mission-statement": "",
+    "occupations_notused": "Agriculturist",
+    "statements": [
+      "We operate a cuting-edge Tissue Culture Lab",
+      "We create custom-tailored Drip Irrigation Solutions"
+    ]
+  },
+  "dripIrrigation": {
+    "title": [ "Custom", "Tailored" ]
+  },
+  "tissueCulture": {
+    "title": [ "Cutting", "Edge" ],
+    "points": {
+      "df" : {
+        "title": "Disease Free Cultivars",
+        "-": "Plants where part of the plant is a seed, gather pathogens from the environment. This increases every generation.",
+        "+": "Our method guarantees disease-free plants."
+      },
+      "qs" : {
+        "title": "Lightening Fast Production",
+        "-": "Plant cultivar is multiplied over the time period of several crop seasons for distribution.",
+        "+": "Our method can mass produce cultivars from a single bud around the whole year!"
+      },
+      "sp" : {
+        "title": "Resilient Pure Lines",
+        "-": "Back crossing of the same parent results in weak offspring.",
+        "+": "We can multiply the cells of a chosen cultivar to maintain strong offspring."
+      }
     },
-    "aboutMe": {
-        "greeting": "Welcome",
-        "intro": "I am Paramjit Singh Bal, an Agriculturist.",
-        "credentials": "",
-        "mission-statement": "",
-        "occupations_notused": "Agriculturist",
-        "statements": [
-            "We operate a cuting-edge Tissue Culture Lab",
-            "We create custom-tailored Drip Irrigation Solutions"
-        ]
-    },
-    "dripIrrigation": {
-        "title": [ "Custom", "Tailored" ]
-    },
-    "tissueCulture": {
-        "title": [ "Cutting", "Edge" ],
-        "points": [
-            "Disease free propogation of planting metances(ask)",
-            "Quick spread of a new culture over a wise area",
-            "We can help hybrid seed producers in multiplying pure lines"
-        ],
-        "plants-available": ["Strawberry", "Banana", "Potato Minitubers", "Potato Microtubers", "Sugarcane"]
-    }
+    "tm": "Traditional Method",
+    "om": "Our Method",
+    "plants-available": ["Strawberry", "Banana", "Potato Minitubers", "Potato Microtubers", "Sugarcane"]
+  }
 }
