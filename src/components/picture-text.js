@@ -3,7 +3,7 @@ import BackgroundImage from 'gatsby-background-image';
 import tw, { styled } from 'twin.macro';
 
 const Card = styled.div(({ reversed }) => [
-  tw`mt-32 md:flex justify-center items-center`,
+  tw`mt-24 md:mt-32 xl:mt-40 md:flex justify-center items-center`,
   reversed ? tw`flex-row-reverse` : tw`flex-row`
 ]);
 
