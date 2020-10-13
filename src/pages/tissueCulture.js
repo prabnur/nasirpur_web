@@ -7,7 +7,7 @@ import Header from '../components/header';
 import { GetText } from '../utils/text/textProvider';
 import Card from '../components/picture-text';
 
-const Content = tw.div`mt-16`;
+const Content = tw.div`mt-24 sm:mt-16`;
 
 const TextHighlight = tw.div`bg-white px-4 transform -skew-x-12 float-left overflow-auto`;
 const TitlePiece = ({ children }) => (
