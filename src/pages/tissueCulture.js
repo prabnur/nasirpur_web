@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 import BackgroundImageFull from '../components/background-image-full';
 import Header from '../components/header';
+import { GetText } from '../utils/text/textProvider';
 import { PictureWithText, TextWithPicture } from '../components/picture-text';
 
 const TissueCulture = () => {
@@ -41,13 +42,29 @@ const TissueCulture = () => {
       }
     }`
   )
+  
+  const getText = React.useContext(GetText);
+  const text = getText('tissueCulture')
+
   return (<>
     <BackgroundImageFull fluid={bg.childImageSharp.fluid} title="TissueCultureBG">
       <Header section='TC'/>
     </BackgroundImageFull>
-    <PictureWithText fluid={df.childImageSharp.fluid}/>
-    <TextWithPicture fluid={qs.childImageSharp.fluid}/>
-    <PictureWithText fluid={sp.childImageSharp.fluid}/>
-   </>)
+    <PictureWithText 
+      fluid={df.childImageSharp.fluid}
+      title={text['points']['df']['title']}
+      body={[text['tm'], text['points']['df']['-'], text['om'], text['points']['df']['+']]}
+    />
+    <TextWithPicture
+      fluid={qs.childImageSharp.fluid}
+      title={text['points']['qs']['title']}
+      body={[text['tm'], text['points']['qs']['-'], text['om'], text['points']['qs']['+']]}
+    />
+    <PictureWithText
+      fluid={sp.childImageSharp.fluid}
+      title={text['points']['sp']['title']}
+      body={[text['tm'], text['points']['sp']['-'], text['om'], text['points']['sp']['+']]}
+    />
+  </>)
 }
 export default TissueCulture;
