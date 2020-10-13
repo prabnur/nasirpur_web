@@ -11,7 +11,7 @@ This is a website for Paramjit Singh Bal who owns Nasirpur Farms. Please see (ga
 1.  (React)[https://reactjs.org/]
 1.  (Gatsby)[https://www.gatsbyjs.com/]
 1.  (Tailwind CSS)[https://tailwindcss.com/]
-1.  (AntD)[https://ant.design/] for their modal (lol)
+1.  (AntD)[https://ant.design/] for their modal _(lol)_
 
 ## 🙏 Acknowledgements
 
