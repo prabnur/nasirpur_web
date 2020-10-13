@@ -42,6 +42,7 @@
     },
     "tm": "Traditional Method",
     "om": "Our Method",
-    "plants-available": ["Strawberry", "Banana", "Potato Minitubers", "Potato Microtubers", "Sugarcane"]
+    "ca-title": "Currently Available Cultivars",
+    "ca-list": ["Strawberry", "Banana", "Potato Minitubers", "Potato Microtubers", "Sugarcane"]
   }
 }

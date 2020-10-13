@@ -37,7 +37,7 @@ const AboutMe = () => {
       <Header section='AM'/>
     </BackgroundImageFull>
     <div tw='flex-auto text-center mt-24'>
-    <h1 tw="block my-16">{text['greeting']}</h1>
+      <h1 tw="block my-16">{text['greeting']}</h1>
       <h2 tw="block my-16">{text['intro']}</h2>
         {text['statements'].map((statement) => 
           <TextPiece>{statement}</TextPiece>)}

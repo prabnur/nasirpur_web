@@ -14,6 +14,10 @@ const TitlePiece = ({ children }) => (
   <TextHighlight><h1 tw="text-green-900">{children}</h1></TextHighlight>
 );
 
+const CurrentlyAvailable = tw.div`
+  bg-black text-white rounded-lg
+  p-3 flex-1 overflow-auto my-8 text-center`;
+
 const TissueCulture = () => {
   const { bg, df, qs, sp} = useStaticQuery(
     graphql`query {
@@ -87,12 +91,18 @@ const TissueCulture = () => {
       <TextHighlight tw="mt-32 ml-16"><h1 tw="text-green-900">{text['title'][0]}</h1></TextHighlight>
       <TextHighlight tw="mt-8 ml-20 sm:mt-17rem sm:-ml-6"><h1 tw="text-green-900">{text['title'][1]}</h1></TextHighlight>
     </BackgroundImageFull>
+
     <div tw="relative">
       <Content>
         <Card key={0} card={cards[0]}/>
         <Card key={1} reversed card={cards[1]}/>
         <Card key={2} card={cards[2]}/>
       </Content>
+    </div>
+
+    <h2 tw="block my-24 text-center font-bold">{text['ca-title']}</h2>
+    <div tw="mx-auto text-3xl w-80 font-semibold">  
+      {text['ca-list'].map((item) => <CurrentlyAvailable>{item}</CurrentlyAvailable>)}
     </div>
   </>)
 }
