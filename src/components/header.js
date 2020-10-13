@@ -5,7 +5,15 @@ import tw from "twin.macro";
 import { Modal } from 'antd';
 
 import { CloseIcon, MenuIcon } from "../utils/icons";
-import { MobileButton, ContactUs, ContactUsModal, LanguageSelector, SectionSelector, SectionSelectorModal } from './buttons';
+import { 
+  MobileButton,
+  ContactUs,
+  ContactUsModal,
+  LanguageSelector,
+  SectionSelector,
+  SectionSelectorModal
+} from './buttons';
+import { minimumWidth } from '../utils/breakpoint'; 
 
 const Header = tw.header`
   justify-between items-center
@@ -25,7 +33,7 @@ const Desktop = tw.nav`
 `;
 
 export default ({ section }) => {
-  const isDesktop = useMediaQuery({ minWidth: 864 });
+  const isDesktop = useMediaQuery({ minWidth: minimumWidth });
   const [showModal, setShowModal] = React.useState(false);
   const dismissModal = () => setShowModal(false);
 
