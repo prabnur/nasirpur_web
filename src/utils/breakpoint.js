@@ -1,3 +1,3 @@
-const minimumWidth = 864
+const mobileBreakpoint = 864
 
-export { minimumWidth }
+export { mobileBreakpoint }
