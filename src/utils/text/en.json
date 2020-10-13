@@ -9,13 +9,10 @@
   },
   "aboutMe": {
     "greeting": "Welcome",
-    "intro": "I am Paramjit Singh Bal, an Agriculturist.",
-    "credentials": "",
-    "mission-statement": "",
-    "occupations_notused": "Agriculturist",
-    "statements": [
-      "We operate a cuting-edge Tissue Culture Lab",
-      "We create custom-tailored Drip Irrigation Solutions"
+    "intro": [
+      "I am Paramjit Singh Bal, an Agriculturist.",
+      "I have more than 20 years of experience in Plant Tissue Culture and Drip Irrigation Systems solutions.",
+      "Recently I had the honour of installing such a solution for the Chief Minister of Punjab, Capt. Amarinder Singh."
     ]
   },
   "dripIrrigation": {

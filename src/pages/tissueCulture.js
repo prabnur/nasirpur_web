@@ -89,7 +89,7 @@ const TissueCulture = () => {
     <BackgroundImageFull fluid={bg.childImageSharp.fluid} title="TissueCultureBG">
       <Header section='TC'/>
       <TextHighlight tw="mt-32 ml-16"><h1 tw="text-green-900">{text['title'][0]}</h1></TextHighlight>
-      <TextHighlight tw="mt-8 ml-20 sm:mt-17rem sm:-ml-6"><h1 tw="text-green-900">{text['title'][1]}</h1></TextHighlight>
+      <TextHighlight tw="mt-8 ml-20 sm:mt-17rem sm:-ml-32"><h1 tw="text-green-900">{text['title'][1]}</h1></TextHighlight>
     </BackgroundImageFull>
 
     <div tw="relative">

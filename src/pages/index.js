@@ -36,11 +36,14 @@ const AboutMe = () => {
     <BackgroundImageFull fluid={imgData.file.childImageSharp.fluid} title="Paramjit Singh Bal">
       <Header section='AM'/>
     </BackgroundImageFull>
-    <div tw='flex-auto text-center mt-24'>
-      <h1 tw="block my-16">{text['greeting']}</h1>
-      <h2 tw="block my-16">{text['intro']}</h2>
-        {text['statements'].map((statement) => 
-          <TextPiece>{statement}</TextPiece>)}
+    
+    <div tw='flex-auto mt-24'>
+      <h2 tw="block my-16 text-center font-bold">{text['greeting']}</h2>
+      {text['intro'].map((item) => 
+        <p tw="block mt-12 w-10/12 mx-auto text-3xl">
+          {item}
+        </p>
+      )}
     </div>
   </>;
 }
