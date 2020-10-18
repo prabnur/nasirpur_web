@@ -14,13 +14,13 @@ const Image = tw(BackgroundImage)`
 `;
 
 const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
-const Title = tw.h3`text-3xl font-bold text-gray-900`;
+const Title = tw.h3`text-4xl font-bold text-gray-900`;
 const Subtitle = styled.div(({ om, tm }) => [
-  tw`font-bold tracking-wide text-xl`,
+  tw`font-bold tracking-wide text-3xl`,
   om && tw`text-green-900`,
   tm && tw`text-purple-700`,
 ]);
-const Description = tw.p`mt-2 text-xl leading-loose`;
+const Description = tw.p`mt-2 text-2xl leading-loose`;
 
 export default ({ key, reversed, card}) => (
   <Card key={key} reversed={reversed} card={card}>
