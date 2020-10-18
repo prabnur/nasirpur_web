@@ -8,9 +8,12 @@ import Header from '../components/header';
 import BackgroundImageFull from '../components/background-image-full';
 
 const Image = tw(BackgroundImage)`
-  rounded md:w-11/12 lg:w-10/12 xl:w-9/12 md:h-144
-  bg-cover bg-center mx-auto border-8 border-brown
+  rounded w-10/12 md:w-11/12 lg:w-10/12 xl:w-9/12 md:h-144
+  h-80 bg-cover bg-center mx-auto border-8 border-brown
 `;
+
+const TextChunks = tw.div`flex-auto mt-24`;
+const TextChunk = tw.p`block mt-12 w-10/12 mx-auto text-3xl`;
 
 const AboutMe = () => {
   const getText = useContext(GetText);
@@ -41,20 +44,23 @@ const AboutMe = () => {
       <Header section='AM'/>
     </BackgroundImageFull>
     
-    <div tw='flex-auto mt-24'>
-      <h2 tw="block my-16 text-center font-bold">{text['greeting']}</h2>
+    <TextChunks tw="mt-8">
+      <h1 tw="block text-center font-bold">{text['greeting']}</h1>
       {text['intro'].map((item, idx) => 
-        <p key={idx} tw="block mt-12 w-10/12 mx-auto text-3xl">
+        <TextChunk key={idx}>
           {item}
-        </p>
+        </TextChunk>
       )}
-    </div>
-
+    </TextChunks>
     
-      {/* <div tw="space-x-64"/> */}
-    <div tw="justify-center items-center pb-20">
-      <Image fluid={am.childImageSharp.fluid}/>
-    </div>  
+    <Image fluid={am.childImageSharp.fluid}/>
+
+    <TextChunks tw="pb-16">
+      <h2 tw="block mt-12 w-10/12 mx-auto font-semibold text-4xl">{text['ms']['title']}</h2>
+      <TextChunk>
+        {text['ms']['statement']}
+      </TextChunk>
+    </TextChunks>
     
   </>;
 }
