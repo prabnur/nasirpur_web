@@ -7,16 +7,9 @@ import { GetText } from '../utils/text/textProvider';
 import Header from '../components/header';
 import BackgroundImageFull from '../components/background-image-full';
 
-// const Image = tw(BackgroundImage)`
-//   rounded md:w-10/12 lg:w-9/12 xl:w-8/12 
-//   bg-cover bg-center
-//   mx-4 sm:mx-8 md:mx-4 lg:mx-8
-// `;
-const StyledImage = tw(BackgroundImage)`mt-0 m-auto rounded border-8 border-red-700`;
 const Image = tw(BackgroundImage)`
   rounded md:w-11/12 lg:w-10/12 xl:w-9/12 md:h-144
-   bg-cover bg-center
-  mx-auto
+  bg-cover bg-center mx-auto border-8 border-brown
 `;
 
 const AboutMe = () => {
