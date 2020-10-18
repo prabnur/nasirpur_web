@@ -8,8 +8,8 @@ import Header from '../components/header';
 import BackgroundImageFull from '../components/background-image-full';
 
 const Image = tw(BackgroundImage)`
-  rounded w-10/12 md:w-11/12 lg:w-10/12 xl:w-9/12 md:h-144
-  h-80 bg-cover bg-center mx-auto border-8 border-brown
+  rounded w-10/12 md:w-11/12 lg:w-10/12 xl:w-9/12 
+  h-80 md:h-screen bg-cover bg-center mx-auto border-8 border-brown
 `;
 
 const TextChunks = tw.div`flex-auto mt-24`;
