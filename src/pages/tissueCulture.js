@@ -10,9 +10,6 @@ import Card from '../components/picture-text';
 const Content = tw.div`mt-24 sm:mt-16`;
 
 const TextHighlight = tw.div`bg-white px-4 transform -skew-x-12 float-left overflow-auto`;
-const TitlePiece = ({ children }) => (
-  <TextHighlight><h1 tw="text-green-900">{children}</h1></TextHighlight>
-);
 
 const CurrentlyAvailable = tw.div`
   bg-black text-white rounded-lg

@@ -14,7 +14,7 @@ import BackgroundImageFull from '../components/background-image-full';
 //   <span tw='bg-indigo-700 w-10 h-10 m-3 block'/>
 // </div>
 
-const TextPiece = tw.h2`block my-12`;
+// const TextPiece = tw.h2`block my-12`;
 
 const AboutMe = () => {
   const getText = useContext(GetText);
