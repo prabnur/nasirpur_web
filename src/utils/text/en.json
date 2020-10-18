@@ -1,6 +1,6 @@
 {
   "language": "English",
-  "option": "ਪੰਜ",
+  "option": "ਪੰਜਾ",
   "buttonText": {
     "AM": "About Me",
     "CO": "Contact Us",
@@ -17,7 +17,43 @@
     ]
   },
   "dripIrrigation": {
-    "title": [ "Custom", "Tailored" ]
+    "title": [ "Custom", "Tailored" ],
+    "points": [
+      {
+        "title": "Maximize Yield",
+        "bullets": [
+          "Creates a perfectly balanced ratio of Air, Water and Nutrients in the root zone.",
+          "The result of this is not just pristine quality, but also at a higher yield."
+        ]
+      },
+      {
+        "title": "Maximizes Savings",
+        "bullets": [
+          "Reduce water consumption.",
+          "Save on labour costs.",
+          "Minimise use of herbicides and pesticides."
+        ]
+      },
+      {
+        "title": "Established Practise",
+        "bullets": [
+          "Expert Design.",
+          "Premium Materials.",
+          "Masterful Execution.",
+          "1000+ acres of land processed."
+        ]
+      },
+      {
+        "title": "Flexible Solutions",
+        "bullets": [
+          "Tailored separately to both corporates and individuals.",
+          "Smooth execution for challenging terrain such as hills.",
+          "Geared for both open fields and protected cultivations",
+          "Excellent post-sales service"
+        ]
+      }
+    ],
+    "ps": "Agronomic support and Excellent post-sales service"
   },
   "tissueCulture": {
     "title": [ "Cutting", "Edge" ],

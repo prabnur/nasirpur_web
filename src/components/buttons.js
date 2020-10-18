@@ -23,9 +23,9 @@ const Selected = tw(BlackOutline)`
 `;
 const SelectedModal = tw(Selected)`my-3`;
 
-const Language = tw(BlackOutline)`text-black hover:border-transparent hover:text-white hover:bg-black w-14 text-lg`;
+const Language = tw(BlackOutline)`text-black hover:border-transparent hover:text-white hover:bg-black w-16 text-lg`;
 
-export const MobileButton = tw(Language)`h-16 w-16 text-2xl mx-4`
+export const MobileButton = tw(Language)`h-16 w-18 text-2xl mx-4`
 
 const Contact = tw.button`
   bg-purple-700 hover:bg-purple-600 text-gray-100 font-bold py-1 px-4 text-lg
