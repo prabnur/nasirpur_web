@@ -98,8 +98,8 @@ const TissueCulture = () => {
     </div>
 
     <h2 tw="block mt-24 mb-12 sm:mt-32 sm:mb-16 text-center font-bold">{text['ca-title']}</h2>
-    <div tw="mx-auto text-3xl w-80 font-semibold pb-24">  
-      {text['ca-list'].map((item) => <CurrentlyAvailable>{item}</CurrentlyAvailable>)}
+    <div tw="mx-auto text-3xl w-80 font-semibold pb-16">  
+      {text['ca-list'].map((item, idx) => <CurrentlyAvailable key={idx}>{item}</CurrentlyAvailable>)}
     </div>
   </>)
 }
