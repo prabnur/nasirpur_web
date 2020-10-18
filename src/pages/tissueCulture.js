@@ -6,14 +6,15 @@ import BackgroundImageFull from '../components/background-image-full';
 import Header from '../components/header';
 import { GetText } from '../utils/text/textProvider';
 import Card from '../components/picture-text';
+import { TextHighlight } from '../components/misc';
 
 const Content = tw.div`mt-24 sm:mt-16`;
-
-const TextHighlight = tw.div`bg-white px-4 transform -skew-x-12 float-left overflow-auto`;
 
 const CurrentlyAvailable = tw.div`
   bg-black text-white rounded-lg
   p-3 flex-1 overflow-auto my-8 text-center`;
+
+const Heading = tw.h1`text-green-900`;
 
 const TissueCulture = () => {
   const { bg, df, qs, sp} = useStaticQuery(
@@ -85,8 +86,8 @@ const TissueCulture = () => {
   return (<>
     <BackgroundImageFull fluid={bg.childImageSharp.fluid} title="TissueCultureBG">
       <Header section='TC'/>
-      <TextHighlight tw="mt-32 ml-16"><h1 tw="text-green-900">{text['title'][0]}</h1></TextHighlight>
-      <TextHighlight tw="mt-8 ml-20 sm:mt-17rem sm:-ml-32"><h1 tw="text-green-900">{text['title'][1]}</h1></TextHighlight>
+      <TextHighlight tw="mt-32 ml-16"><Heading>{text['title'][0]}</Heading></TextHighlight>
+      <TextHighlight tw="mt-8 ml-20 sm:mt-17rem sm:-ml-32"><Heading>{text['title'][1]}</Heading></TextHighlight>
     </BackgroundImageFull>
 
     <div tw="relative">

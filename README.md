@@ -17,6 +17,8 @@ This is a website for Paramjit Singh Bal who owns Nasirpur Farms. Please see [ga
 
 - A special thanks to [Owaiskhan](https://github.com/owaiswiz) for help with making **`picture-text.js`**
 
+- Thanks to [Nikk](https://www.flickr.com/photos/nikkvalentine/) for picture of [Water Droplet](https://www.flickr.com/photos/nikkvalentine/26145405558/)
+
 ## 💫 Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/prabnur/nasirpur_web.git)
