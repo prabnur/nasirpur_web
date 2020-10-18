@@ -1,6 +1,6 @@
 const Typography = require("typography");
-const irvingTheme = require('typography-theme-irving');
 
+const irvingTheme = require('typography-theme-irving');
 irvingTheme.googleFonts = [
     {
       name: "Exo 2",
@@ -13,8 +13,8 @@ irvingTheme.googleFonts = [
 ]
 irvingTheme.headerFontFamily = ["Exo 2", "sans-serif"]
 irvingTheme.scaleRatio = 4.5
-const TypographyGen = Typography(irvingTheme)
 
+const TypographyGen = Typography(irvingTheme)
 const writeFile = require('fs').writeFile;
 writeFile('./src/utils/typography/typography.css', TypographyGen.createStyles(), (err) => {if(err) console.log(err)});
 console.log('Typography Updated')
