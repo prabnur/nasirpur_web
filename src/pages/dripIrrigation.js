@@ -2,10 +2,9 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby';
 import tw from 'twin.macro';
 
-import BackgroundImageFull from '../components/background-image-full';
+import BackgroundImageFull, { TextHighlight } from '../components/background-image-full';
 import Header from '../components/header';
 import { GetText } from '../utils/text/textProvider';
-import { TextHighlight } from '../components/misc';
 
 const Heading = tw.h1`text-indigo-600`;
 
@@ -31,6 +30,8 @@ const DripIrrigation = () => {
       <TextHighlight tw="mt-32 ml-16"><Heading>{text['title'][0]}</Heading></TextHighlight>
       <TextHighlight tw="mt-8 ml-20 sm:mt-17rem sm:-ml-32"><Heading>{text['title'][1]}</Heading></TextHighlight>
     </BackgroundImageFull>
+
+
   </>);
 }
 export default DripIrrigation;

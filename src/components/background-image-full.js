@@ -17,3 +17,7 @@ const BackgroundImageFull = ({ children, fluid, fixed, title }) => (
 )
 
 export default BackgroundImageFull;
+
+const TextHighlight = tw.div`bg-white px-4 transform -skew-x-12 float-left overflow-auto pt-4`;
+
+export { TextHighlight }

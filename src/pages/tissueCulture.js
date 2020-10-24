@@ -2,11 +2,10 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby';
 import tw from 'twin.macro';
 
-import BackgroundImageFull from '../components/background-image-full';
+import BackgroundImageFull, { TextHighlight } from '../components/background-image-full';
 import Header from '../components/header';
 import { GetText } from '../utils/text/textProvider';
-import Card from '../components/picture-text';
-import { TextHighlight } from '../components/misc';
+import Card from '../components/card';
 
 const Content = tw.div`mt-24 sm:mt-16`;
 
