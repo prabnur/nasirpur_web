@@ -8,10 +8,8 @@ import { CloseIcon, MenuIcon } from "../utils/icons";
 import { 
   MobileButton,
   ContactUs,
-  ContactUsModal,
   LanguageSelector,
-  SectionSelector,
-  SectionSelectorModal
+  SectionSelector
 } from './buttons';
 
 const Header = tw.header`
@@ -36,12 +34,16 @@ export default ({ section }) => {
   const [showModal, setShowModal] = React.useState(false);
   const dismissModal = () => setShowModal(false);
 
+  const [showContactUsModal, setShowContactUsModal] = React.useState(false);
+  const contactUsPlz = () => {dismissModal(); setShowContactUsModal(true)}
+  const noDontGo = () => setShowContactUsModal(false);
+
   return (<>
     <Header>
       {(isDesktop &&
       <Desktop>
-        <LanguageSelector/>
-        <Horizontal key={1}>
+        <LanguageSelector isDesktop/>
+        <Horizontal>
           <SectionSelector
             btOption='AM'
             link='/'
@@ -58,7 +60,7 @@ export default ({ section }) => {
             selected={section === 'TC'}
           />
         </Horizontal>
-        <ContactUs link='/contactUs/' key={2}/>
+        <ContactUs onClick={contactUsPlz}/>
       </Desktop>)}
 
 
@@ -80,25 +82,40 @@ export default ({ section }) => {
       visible={showModal}
       width={234}
     >
-      <SectionSelectorModal
+      <SectionSelector
+        modal
         btOption='AM'
         link='/'
         selected={section === 'AM'}
         dismissModal={dismissModal}
       />
-      <SectionSelectorModal
+      <SectionSelector
+        modal
         btOption='DI'
         link='/dripIrrigation/'
         selected={section === 'DI'}
         dismissModal={dismissModal}
       />
-      <SectionSelectorModal
+      <SectionSelector
+        modal
         btOption='TC'
         link='/tissueCulture/'
         selected={section === 'TC'}
         dismissModal={dismissModal}
       />
-      <ContactUsModal link='/contactUs/' key={2}/>
+      <ContactUs modal onClick={contactUsPlz}/>
+    </Modal>
+
+    <Modal
+      centered
+      closable={false}
+      footer={null}
+      onCancel={noDontGo}
+      style={modalStyle}
+      visible={showContactUsModal}
+      width={234}
+    >
+
     </Modal>
   </>);
 };

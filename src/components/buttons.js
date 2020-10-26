@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
-import { useMediaQuery } from 'react-responsive'
-import tw from "twin.macro"; // , { styled }
+import tw, { styled } from "twin.macro"; // , { styled }
 import { Link } from 'gatsby';
 
 import { ChangeLanguage, GetText } from '../utils/text/textProvider';
@@ -33,72 +32,61 @@ const Contact = tw.button`
 `;
 const ContactModal = tw(Contact)`my-3`;
 
-export function LanguageSelector() {
+export function LanguageSelector({ isDesktop }) {
   const changeLanguage = useContext(ChangeLanguage);
   const getText = useContext(GetText);
-  const isDesktop = useMediaQuery({ minWidth: 864 });
   return <>
-    {(isDesktop &&
+    {isDesktop ?
     <Language
       onClick={changeLanguage}>
       {getText("option")}
-    </Language>)}
-    {(!isDesktop &&
+    </Language>
+    :
     <MobileButton
       onClick={changeLanguage}>
       {getText("option")}
-    </MobileButton>)}
+    </MobileButton>}
   </>;   
 }
 
-export function SectionSelector({ btOption, dismissModal, link, selected }) {
+export function SectionSelector({ btOption, dismissModal, link, modal, selected }) {
   const getText = useContext(GetText);
   return (selected ?
     <Link to={link}>
-      <Selected onClick={dismissModal}>
-        {getText('buttonText')[btOption]}
-      </Selected>
-    </Link> :
-    <Link to={link}>
-      <BlackOutline onClick={dismissModal}>
-        {getText('buttonText')[btOption]}
-      </BlackOutline>
+      { modal ?
+        <SelectedModal onClick={dismissModal}>
+          {getText('buttonText')[btOption]}
+        </SelectedModal>
+        :
+        <Selected onClick={dismissModal}>
+          {getText('buttonText')[btOption]}
+        </Selected>
+      }
     </Link>
-  );
-}
-export function SectionSelectorModal({ btOption, dismissModal, link, selected }) {
-  const getText = useContext(GetText);
-  return (selected ?
+    :
     <Link to={link}>
-      <SelectedModal onClick={dismissModal}>
-        {getText('buttonText')[btOption]}
-      </SelectedModal>
-    </Link> :
-    <Link to={link}>
-      <BlackOutlineModal onClick={dismissModal}>
-        {getText('buttonText')[btOption]}
-      </BlackOutlineModal>
+      { modal ?
+        <BlackOutlineModal onClick={dismissModal}>
+          {getText('buttonText')[btOption]}
+        </BlackOutlineModal>
+        :
+        <BlackOutline onClick={dismissModal}>
+          {getText('buttonText')[btOption]}
+        </BlackOutline>
+      }
     </Link>
   );
 }
 
-export function ContactUs({ link, selectMe }) {
+export function ContactUs({ modal, onClick }) {
   const getText = useContext(GetText);
-  return (
-    <Link to={link}>
-      <Contact onClick={selectMe}>
-        {getText('buttonText')['CO']}
-      </Contact>
-    </Link>
-  );
-}
-export function ContactUsModal({ link, selectMe }) {
-  const getText = useContext(GetText);
-  return (
-    <Link to={link}>
-      <ContactModal onClick={selectMe}>
-        {getText('buttonText')['CO']}
-      </ContactModal>
-    </Link>
+  return ( modal ?
+    <ContactModal onClick={onClick}>
+      {getText('buttonText')['CO']}
+    </ContactModal>
+    :
+    <Contact onClick={onClick}>
+      {getText('buttonText')['CO']}
+    </Contact>
   );
 }
