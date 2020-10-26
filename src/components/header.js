@@ -5,11 +5,11 @@ import tw from "twin.macro";
 import { Modal } from 'antd';
 
 import { CloseIcon, MenuIcon } from "../utils/icons";
-import { 
-  MobileButton,
+import {
   ContactUs,
   LanguageSelector,
-  SectionSelector
+  SectionSelector,
+  Language
 } from './buttons';
 
 const Header = tw.header`
@@ -40,7 +40,7 @@ export default ({ section }) => {
 
   return (<>
     <Header>
-      {(isDesktop &&
+      { isDesktop ?
       <Desktop>
         <LanguageSelector isDesktop/>
         <Horizontal>
@@ -61,16 +61,14 @@ export default ({ section }) => {
           />
         </Horizontal>
         <ContactUs onClick={contactUsPlz}/>
-      </Desktop>)}
-
-
-      {(!isDesktop &&
+      </Desktop>
+      :
       <Mobile>
         <LanguageSelector/>
-        <MobileButton onClick={() => setShowModal(true)}>
+        <Language mobile onClick={() => setShowModal(true)}>
           {showModal ? <CloseIcon/> : <MenuIcon/>}
-        </MobileButton>
-      </Mobile>)}
+        </Language>
+      </Mobile>}
     </Header>
     
     <Modal
