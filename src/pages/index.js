@@ -8,9 +8,14 @@ import { GetText } from '../utils/text/textProvider';
 import Header from '../components/header';
 import BackgroundImageFull from '../components/background-image-full';
 
+// const Image = tw(BackgroundImage)`
+//   rounded w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 
+//   h-48 mbl:h-64 sm:h-80 svn:h-100 md:h-screen bg-cover bg-center mx-auto
+// `;
+
 const Image = tw(BackgroundImage)`
   rounded w-10/12 md:w-11/12 lg:w-10/12 xl:w-9/12 
-  h-80 md:h-screen bg-cover bg-center mx-auto
+  h-48 mbl:h-64 sm:h-80 six:h-100 md:h-124 lg:h-144 xl:h-screen bg-cover bg-center mx-auto
 `;
 
 const TextChunks = tw.div`flex-auto`;
@@ -19,7 +24,8 @@ const TextChunk = tw.p`block mt-12 w-10/12 mx-auto text-xl md:text-2xl lg:text-3
 const AboutMe = () => {
   const getText = useContext(GetText);
   const text = getText('aboutMe')
-  const isDesktop = useMediaQuery({ minWidth: 662 });
+  const isBGDesktop = useMediaQuery({ minWidth: 662 });
+  const isAMDesktop = useMediaQuery({ minWidth: 450 });
 
   const { bg, bg_mb, am } = useStaticQuery(graphql`
     query {
@@ -41,7 +47,7 @@ const AboutMe = () => {
 
       am: file(relativePath: { eq: "amarinder-cropped-edited.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1920, maxHeight: 1080, quality: 90) {
+          fluid(maxWidth: 1920, maxHeight: 1080, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
@@ -50,7 +56,7 @@ const AboutMe = () => {
   `)
 
   return <>
-    <BackgroundImageFull fluid={(isDesktop ? bg : bg_mb).childImageSharp.fluid} title="Paramjit Singh Bal">
+    <BackgroundImageFull fluid={(isBGDesktop ? bg : bg_mb).childImageSharp.fluid} title="Paramjit Singh Bal">
       <Header section='AM'/>
     </BackgroundImageFull>
     
