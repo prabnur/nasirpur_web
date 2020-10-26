@@ -76,7 +76,7 @@ const DripIrrigation = () => {
   return (<>
     <BackgroundImageFull fluid={bg} title="DripIrrigationBG">
       <Header section='DI'/>
-      <div tw="mt-100 ml-12">
+      <div tw="mt-80 ml-12">
         <TextHighlight><Heading>{text['title'][0]}</Heading></TextHighlight>
         <TextHighlight tw="mt-6 ml-8 mbl:ml-10 sm:mt-32 sm:-ml-32"><Heading>{text['title'][1]}</Heading></TextHighlight>
       </div>
