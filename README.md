@@ -15,9 +15,13 @@ This is a website for Paramjit Singh Bal who owns Nasirpur Farms. Please see [ga
 
 ## 🙏 Acknowledgements
 
-- A special thanks to [Owaiskhan](https://github.com/owaiswiz) for help with making **`picture-text.js`**
+- A special thanks to [Owaiskhan](https://github.com/owaiswiz) for help with making **`card.js`**
 
 - Thanks to [Nikk](https://www.flickr.com/photos/nikkvalentine/) for picture of [Water Droplet](https://www.flickr.com/photos/nikkvalentine/26145405558/)
+
+- [Steve Schoger](https://twitter.com/steveschoger) for the Menu and Close icons from from his project [Hero Icons](https://heroicons.com/)
+
+- Alexander Kahlkopf for the Check Mark, WhatsApp and Email icons from his project [iconmonstr](https://iconmonstr.com/)
 
 ## 💫 Deploy
 
