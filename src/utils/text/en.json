@@ -25,7 +25,7 @@
       {
         "title": "Maximize Yield",
         "bullets": [
-          "Perfectly balanced ratio of Air, Water and Nutrients in the root zone.",
+          "Perfectly Balanced Ratio of air, water and nutrients in the root zone.",
           "Maximum Quality",
           "Maximum Yield"
         ]
@@ -62,23 +62,23 @@
   },
   "tissueCulture": {
     "title": [ "Cutting", "Edge" ],
-    "points": {
-      "df" : {
+    "points": [
+      {
         "title": "Disease Free Cultivars",
         "-": "Plants where part of the plant is a seed, gather pathogens from the environment. This increases every generation.",
         "+": "Our method guarantees disease-free plants."
       },
-      "qs" : {
+      {
         "title": "Rapid Cultivar Production",
         "-": "Plant cultivar is multiplied over the time period of several crop seasons for distribution.",
         "+": "Our method can mass produce cultivars from a single bud around the whole year!"
       },
-      "sp" : {
+      {
         "title": "Resilient Pure Lines",
         "-": "Back crossing of the same parent results in weak offspring.",
         "+": "We can multiply the cells of a chosen cultivar to maintain strong offspring."
       }
-    },
+    ],
     "tm": "Traditional Method",
     "om": "Our Method",
     "ca-title": "Currently Available Cultivars",
