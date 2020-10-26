@@ -8,25 +8,31 @@
     "TC": "ਟਿਸ਼ੂ ਕਲਚਰ"
   },
   "aboutMe": {
+    "title": "Nasirpur Farms",
     "greeting": "Welcome",
     "intro": [
       "I am Paramjit Singh Bal, an Agriculturist.",
       "I have more than 20 years of experience in Plant Tissue Culture and Drip Irrigation Systems solutions.",
-      "Recently I had the honour of installing such a solution for the Chief Minister of Punjab, Capt. Amarinder Singh."
-    ]
+      "I had the honour of installing such a solution for the Chief Minister of Punjab and current Maharaja of Patiala, Capt. Amarinder Singh."
+    ],
+    "ms": {
+      "title": "Mission Statement",
+      "statement":"We are committed to providing nutrient rich foods and minimizing the impact of agriculture on its environment. As a result, our products have both short-term and long-term benefits to you."
+    }
   },
   "dripIrrigation": {
-    "title": [ "Custom", "Tailored" ],
+    "title": [ "Quality", "Fertigation" ],
     "points": [
       {
         "title": "Maximize Yield",
         "bullets": [
-          "Creates a perfectly balanced ratio of Air, Water and Nutrients in the root zone.",
-          "The result of this is not just pristine quality, but also at a higher yield."
+          "Perfectly Balanced Ratio of air, water and nutrients in the root zone.",
+          "Maximum Quality",
+          "Maximum Yield"
         ]
       },
       {
-        "title": "Maximizes Savings",
+        "title": "Huge Savings",
         "bullets": [
           "Reduce water consumption.",
           "Save on labour costs.",
@@ -36,6 +42,7 @@
       {
         "title": "Established Practise",
         "bullets": [
+          "20+ years of experience",
           "Expert Design.",
           "Premium Materials.",
           "Masterful Execution.",
@@ -43,7 +50,7 @@
         ]
       },
       {
-        "title": "Flexible Solutions",
+        "title": "Custom Tailored",
         "bullets": [
           "Tailored separately to both corporates and individuals.",
           "Smooth execution for challenging terrain such as hills.",
@@ -56,23 +63,23 @@
   },
   "tissueCulture": {
     "title": [ "Cutting", "Edge" ],
-    "points": {
-      "df" : {
+    "points": [
+      {
         "title": "Disease Free Cultivars",
         "-": "Plants where part of the plant is a seed, gather pathogens from the environment. This increases every generation.",
         "+": "Our method guarantees disease-free plants."
       },
-      "qs" : {
+      {
         "title": "Rapid Cultivar Production",
         "-": "Plant cultivar is multiplied over the time period of several crop seasons for distribution.",
         "+": "Our method can mass produce cultivars from a single bud around the whole year!"
       },
-      "sp" : {
+      {
         "title": "Resilient Pure Lines",
         "-": "Back crossing of the same parent results in weak offspring.",
         "+": "We can multiply the cells of a chosen cultivar to maintain strong offspring."
       }
-    },
+    ],
     "tm": "Traditional Method",
     "om": "Our Method",
     "ca-title": "Currently Available Cultivars",
