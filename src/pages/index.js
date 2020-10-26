@@ -8,11 +8,6 @@ import { GetText } from '../utils/text/textProvider';
 import Header from '../components/header';
 import BackgroundImageFull from '../components/background-image-full';
 
-// const Image = tw(BackgroundImage)`
-//   rounded w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 
-//   h-48 mbl:h-64 sm:h-80 svn:h-100 md:h-screen bg-cover bg-center mx-auto
-// `;
-
 const Image = tw(BackgroundImage)`
   rounded w-10/12 md:w-11/12 lg:w-10/12 xl:w-9/12 
   h-48 mbl:h-64 sm:h-80 six:h-100 md:h-124 lg:h-144 xl:h-screen bg-cover bg-center mx-auto
@@ -25,7 +20,6 @@ const AboutMe = () => {
   const getText = useContext(GetText);
   const text = getText('aboutMe')
   const isBGDesktop = useMediaQuery({ minWidth: 662 });
-  const isAMDesktop = useMediaQuery({ minWidth: 450 });
 
   const { bg, bg_mb, am } = useStaticQuery(graphql`
     query {
