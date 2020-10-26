@@ -71,8 +71,10 @@ const TissueCulture = () => {
   return (<>
     <BackgroundImageFull fluid={bg} title="TissueCultureBG">
       <Header section='TC'/>
-      <TextHighlight tw="mt-32 ml-16"><Heading>{text['title'][0]}</Heading></TextHighlight>
-      <TextHighlight tw="mt-8 ml-20 sm:mt-17rem sm:-ml-32"><Heading>{text['title'][1]}</Heading></TextHighlight>
+      <div tw="mt-32 ml-16">
+        <TextHighlight><Heading>{text['title'][0]}</Heading></TextHighlight>
+        <TextHighlight tw="mt-6 ml-8 mbl:ml-10 sm:mt-32 sm:-ml-32"><Heading>{text['title'][1]}</Heading></TextHighlight>
+      </div>
     </BackgroundImageFull>
 
     <div tw="relative">

@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby';
+import { useMediaQuery } from 'react-responsive'
 import tw from 'twin.macro';
 
 import BackgroundImageFull, { TextHighlight } from '../components/background-image-full';
@@ -7,7 +8,12 @@ import Header from '../components/header';
 import Card from '../components/card-bullets';
 import { GetText } from '../utils/text/textProvider';
 
-const Heading = tw.h1`text-indigo-600`;
+const Heading = tw.h1`text-indigo-600 text-4xl mbl:text-5xl`;
+// const SmallHeading = tw.h2`text-indigo-600`;
+
+// const Heading = () => {
+//   const isBigEnough = useMediaQuery({ minWidth: 662 });
+// }
 
 const DripIrrigation = () => {
   const query = useStaticQuery(
@@ -70,8 +76,10 @@ const DripIrrigation = () => {
   return (<>
     <BackgroundImageFull fluid={bg} title="DripIrrigationBG">
       <Header section='DI'/>
-      <TextHighlight tw="mt-32 ml-16"><Heading>{text['title'][0]}</Heading></TextHighlight>
-      <TextHighlight tw="mt-8 ml-20 sm:mt-17rem sm:-ml-32"><Heading>{text['title'][1]}</Heading></TextHighlight>
+      <div tw="mt-100 ml-12">
+        <TextHighlight><Heading>{text['title'][0]}</Heading></TextHighlight>
+        <TextHighlight tw="mt-6 ml-8 mbl:ml-10 sm:mt-32 sm:-ml-32"><Heading>{text['title'][1]}</Heading></TextHighlight>
+      </div>
     </BackgroundImageFull>
 
     {cards.map((card, idx) => <Card key={idx} reversed={idx%2==1} card={card}/>)}
