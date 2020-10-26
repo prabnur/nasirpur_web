@@ -1,6 +1,6 @@
 {
   "language": "English",
-  "option": "ਪੰਜਾ",
+  "option": "ਪੰਜ",
   "buttonText": {
     "AM": "About Me",
     "CO": "Contact Us",
@@ -31,7 +31,7 @@
         ]
       },
       {
-        "title": "Maximizes Savings",
+        "title": "Huge Savings",
         "bullets": [
           "Reduce water consumption.",
           "Save on labour costs.",
