@@ -1,11 +1,5 @@
-// import { useContext } from 'react';
-
-//import LanguageContext from '../containers/language'
-//const languageContext = useContext(LanguageContext);
-
 import Typography from "typography";
 import irvingTheme from 'typography-theme-irving';
-
 
 // Use Exo2 instead of Exo
 irvingTheme.googleFonts = [
@@ -19,6 +13,7 @@ irvingTheme.googleFonts = [
     },
 ]
 irvingTheme.headerFontFamily = ["Exo 2", "sans-serif"]
+irvingTheme.scaleRatio = 5;
 export default Typography(irvingTheme)
 
 /*

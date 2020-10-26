@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Nasirpur Farms Website`,
-    description: `A website for Paramjit Bal, owner of Nasirpur Farms`,
-    author: `Prabnur Bal`,
+    description: `Website for Nasirpur Farms which offers custom Drip Irrigation solutions and Plant Tissue Culture solutions`,
+    author: `Paramjit Bal`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,11 +18,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Nasirpur Farms`,
+        short_name: `Nasirpur`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
+        useMozJpeg: true, // Build time increase!
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
@@ -30,10 +31,13 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-antd`,
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: 'gatsby-background-image',
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        // add your own characters to escape, replacing the default ':/'
+        specialChars: '/:',
       },
     },
   ],
