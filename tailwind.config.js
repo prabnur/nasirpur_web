@@ -11,6 +11,7 @@ module.exports = {
         'brown': '#5c3100'
       },
       spacing: {
+        '7': '1.8rem',
         '17rem': '17rem',
         '80': '20rem',
         '144': '36rem'
