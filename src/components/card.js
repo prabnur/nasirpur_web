@@ -22,8 +22,8 @@ const Subtitle = styled.div(({ om, tm }) => [
 ]);
 const Description = tw.p`mt-2 text-2xl leading-loose`;
 
-export default ({ key, reversed, card}) => (
-  <Card key={key} reversed={reversed} card={card}>
+export default ({ reversed, card}) => (
+  <Card reversed={reversed} card={card}>
     <Image fluid={card.fluid} />
     <Details>
       <Title>{card.title}</Title>
@@ -34,3 +34,5 @@ export default ({ key, reversed, card}) => (
     </Details>
   </Card>
 )
+
+export { Card, Image };
