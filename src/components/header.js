@@ -4,13 +4,14 @@ import { useMediaQuery } from 'react-responsive'
 import tw from "twin.macro";
 import { Modal } from 'antd';
 
-import { CloseIcon, MenuIcon } from "../utils/icons";
+import { CloseIcon, MenuIcon } from '../utils/icons';
 import {
   ContactUs,
   LanguageSelector,
   SectionSelector,
   Language
 } from './buttons';
+import { Mail, WhatsApp } from './contact-us';
 
 const Header = tw.header`
   justify-between items-center
@@ -21,7 +22,7 @@ const Horizontal = tw.span`inline-flex`;
 const Mobile = tw(Horizontal)`flex justify-between items-center`;
 
 const modalStyle = {
-  borderRadius: "50px",
+  borderRadius: "75px",
   textAlign: "center"
 };
 
@@ -111,9 +112,10 @@ export default ({ section }) => {
       onCancel={noDontGo}
       style={modalStyle}
       visible={showContactUsModal}
-      width={234}
+      width={240}
     >
-
+      <WhatsApp/>
+      <Mail/>
     </Modal>
   </>);
 };
