@@ -11,12 +11,13 @@ const Content = tw.div`mt-24 sm:mt-16`;
 
 const CurrentlyAvailable = tw.div`
   bg-black text-white rounded-lg
-  p-3 flex-1 overflow-auto my-8 text-center`;
+  p-3 flex-1 overflow-auto my-8 text-center
+`;
 
 const Heading = tw.h1`text-green-900`;
 
 const TissueCulture = () => {
-  const { bg, df, qs, sp} = useStaticQuery(
+  const query = useStaticQuery(
     graphql`query {
       bg: file(relativePath: { eq: "cuttingEdge.jpg" }) {
         childImageSharp {
@@ -55,35 +56,20 @@ const TissueCulture = () => {
   const getText = React.useContext(GetText);
   const text = getText('tissueCulture')
 
-  const cards = [
-    {
-      fluid: df.childImageSharp.fluid,
-      title: text['points']['df']['title'],
-      subtitleTM: text['tm'],
-      descriptionTM: text['points']['df']['-'],
-      subtitleOM: text['om'],
-      descriptionOM: text['points']['df']['+']
-    },
-    {
-      fluid: qs.childImageSharp.fluid,
-      title: text['points']['qs']['title'],
-      subtitleTM: text['tm'],
-      descriptionTM: text['points']['qs']['-'],
-      subtitleOM: text['om'],
-      descriptionOM: text['points']['qs']['+']
-    },
-    {
-      fluid: sp.childImageSharp.fluid,
-      title: text['points']['sp']['title'],
-      subtitleTM: text['tm'],
-      descriptionTM: text['points']['sp']['-'],
-      subtitleOM: text['om'],
-      descriptionOM: text['points']['sp']['+']
-    }
-  ];
+  const imageData = Object.values(query).slice(1,);
+  const bg = query.bg.childImageSharp.fluid;
+
+  const cards = imageData.map((data, idx) => ({
+    fluid: data.childImageSharp.fluid,
+    title: text['points'][idx]['title'],
+    subtitleTM: text['tm'],
+    descriptionTM: text['points'][idx]['-'],
+    subtitleOM: text['om'],
+    descriptionOM: text['points'][idx]['+']
+  }));
 
   return (<>
-    <BackgroundImageFull fluid={bg.childImageSharp.fluid} title="TissueCultureBG">
+    <BackgroundImageFull fluid={bg} title="TissueCultureBG">
       <Header section='TC'/>
       <TextHighlight tw="mt-32 ml-16"><Heading>{text['title'][0]}</Heading></TextHighlight>
       <TextHighlight tw="mt-8 ml-20 sm:mt-17rem sm:-ml-32"><Heading>{text['title'][1]}</Heading></TextHighlight>
@@ -91,9 +77,7 @@ const TissueCulture = () => {
 
     <div tw="relative">
       <Content>
-        <Card key={0} card={cards[0]}/>
-        <Card key={1} reversed card={cards[1]}/>
-        <Card key={2} card={cards[2]}/>
+        {cards.map((card, idx) => <Card key={idx} reversed={idx%2==1} card={card}/>)}
       </Content>
     </div>
 
