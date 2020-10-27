@@ -2,9 +2,17 @@
   Nasirpur Farms Website
 </h1>
 
-## Description
+## ✍️ Description
 
 This is a website for Paramjit Singh Bal who owns Nasirpur Farms. Please see [gatsby-cli](https://www.gatsbyjs.com/docs/gatsby-cli/) for commands to run a develop server or build.
+
+## 🌟 Features
+
+- Responsive design for all screen sizes
+- Enhanced image experience courtesy of [Gatsby-Image](https://www.gatsbyjs.com/plugins/gatsby-image/) and [Gatsby-Background-Image](https://www.gatsbyjs.com/plugins/gatsby-background-image/) that includes
+  - Image optimization and loading
+  - Server Side Rendering
+  - Blur / Traced SVG Effects
 
 ## 🚀 Technologies Used
 
