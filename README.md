@@ -10,9 +10,14 @@ This is a website for Paramjit Singh Bal who owns Nasirpur Farms. Please see [ga
 
 - Responsive design for all screen sizes
 - Enhanced image experience courtesy of [Gatsby-Image](https://www.gatsbyjs.com/plugins/gatsby-image/) and [Gatsby-Background-Image](https://www.gatsbyjs.com/plugins/gatsby-background-image/) that includes
-  - Image optimization and loading
+  - Optimized image loading
   - Server Side Rendering
-  - Blur / Traced SVG Effects
+  - Blur / Traced SVG form of image is visible while image is loaded or before it for a nice transition
+- Implemented SEO through
+  - Site Metadata
+  - **Social Media Cards** for `Twitter`, `Slack`, `Facebook` for each page
+  - **JSON-LD** Structured Data for `Google` and `Apple`
+  - Human & Machine readable **sitemap**, courtesy of [advanced-seo-plugin](https://www.gatsbyjs.com/plugins/gatsby-plugin-advanced-sitemap/)
 
 ## 🚀 Technologies Used
 

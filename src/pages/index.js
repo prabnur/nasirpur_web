@@ -7,6 +7,7 @@ import tw from 'twin.macro';
 import { GetText } from '../utils/text/textProvider';
 import Header from '../components/header';
 import BackgroundImageFull from '../components/background-image-full';
+import SEO from '../components/seo';
 
 const Image = tw(BackgroundImage)`
   rounded w-10/12 md:w-11/12 lg:w-10/12 xl:w-9/12 
@@ -28,6 +29,11 @@ const AboutMe = () => {
           fluid(maxWidth: 1920, maxHeight: 1080, quality: 90) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
+          resize(width: 1200) {
+            src
+            height
+            width
+          }
         }
       }
 
@@ -42,7 +48,7 @@ const AboutMe = () => {
       am: file(relativePath: { eq: "amarinder-cropped-edited.png" }) {
         childImageSharp {
           fluid(maxWidth: 1920, maxHeight: 1080, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
@@ -50,6 +56,14 @@ const AboutMe = () => {
   `)
 
   return <>
+    <SEO
+      title={text['title']}
+      description={text['description']}
+      image={bg.childImageSharp.resize}
+      keywords={text['keywords']}
+      lang={getText('htmlLangCode')}
+    />
+
     <BackgroundImageFull fluid={(isBGDesktop ? bg : bg_mb).childImageSharp.fluid} title="Paramjit Singh Bal">
       <Header section='AM'/>
     </BackgroundImageFull>

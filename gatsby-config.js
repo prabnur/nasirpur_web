@@ -1,8 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Nasirpur Farms Website`,
-    description: `Website for Nasirpur Farms which offers custom Drip Irrigation solutions and Plant Tissue Culture solutions`,
+    title: `Nasirpur Farms`,
+    description: `
+      We offer the best quality and lowest priced tissue culture plants and seeds for Banana, Potato, Strawberry, Sugarcane, Kiwi, Gerbera, Pipal, Kalanchoe, Succulents and Plowinia in Punjab, Haryana and Himachal Pradesh.
+      Our budget-friendly Drip Irrigation lines and tape solutions maximise agricultural produce and minimise impact on environment.
+    `,
+    keywords: ['tissue culture', 'seeds', 'plants', 'best', 'quality', 'lowest price', 'fertigation', 'drip', 'irrigation', 'drip-lines', 'drip-tape',
+      'service', 'farming', 'punjab', 'haryana', 'himachal'],
     author: `Paramjit Bal`,
+    siteUrl: `https://www.nasirpur.farm`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -23,7 +29,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        useMozJpeg: true, // Build time increase!
+        useMozJpeg: true, // Build time increase at the expense of quality
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
@@ -40,5 +46,6 @@ module.exports = {
         specialChars: '/:',
       },
     },
+    `gatsby-plugin-advanced-sitemap`
   ],
 }

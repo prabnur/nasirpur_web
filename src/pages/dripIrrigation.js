@@ -1,12 +1,13 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby';
-import { useMediaQuery } from 'react-responsive'
+// import { useMediaQuery } from 'react-responsive'
 import tw from 'twin.macro';
 
 import BackgroundImageFull, { TextHighlight } from '../components/background-image-full';
 import Header from '../components/header';
 import Card from '../components/card-bullets';
 import { GetText } from '../utils/text/textProvider';
+import SEO from '../components/seo';
 
 const Heading = tw.h1`text-indigo-600 text-4xl mbl:text-5xl`;
 // const SmallHeading = tw.h2`text-indigo-600`;
@@ -22,6 +23,11 @@ const DripIrrigation = () => {
         childImageSharp {
           fluid(maxWidth: 1920, maxHeight: 1080, quality: 90) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+          resize(width: 1200) {
+            src
+            height
+            width
           }
         }
       }
@@ -74,6 +80,14 @@ const DripIrrigation = () => {
   }));
 
   return (<>
+    <SEO
+      title={text['metaTitle']}
+      description={text['description']}
+      image={query.bg.childImageSharp.resize}
+      keywords={text['keywords']}
+      lang={getText('htmlLangCode')}
+    />
+
     <BackgroundImageFull fluid={bg} title="DripIrrigationBG">
       <Header section='DI'/>
       <div tw="mt-80 ml-12">

@@ -1,6 +1,7 @@
 {
   "language": "English",
   "option": "ਪੰਜ",
+  "htmlLangCode": "en",
   "buttonText": {
     "AM": "About Me",
     "CO": "Contact Us",
@@ -9,19 +10,32 @@
   },
   "aboutMe": {
     "title": "Nasirpur Farms",
+    "description": "We have the best quality and lowest priced tissue culture plants and seeds in Punjab, Haryana and Himachal Pradesh. Our budget-friendly Drip Irrigation lines and tape solutions maximise agricultural produce and minimise impact on environment.",
+    "keywords": [
+      "tissue culture", "seeds", "plants", "best", "quality", "low price",
+      "drip", "irrigation", "drip-lines", "drip-tape", "service", "farming",
+      "punjab", "haryana", "himachal"
+    ],
     "greeting": "Welcome",
     "intro": [
       "I am Paramjit Singh Bal, an Agriculturist.",
-      "I have more than 20 years of experience in Plant Tissue Culture and Drip Irrigation Systems solutions.",
+      "I have 25 years of experience in Plant Tissue Culture and Drip Irrigation Systems solutions.",
       "I had the honour of installing such a solution for the Chief Minister of Punjab, Capt. Amarinder Singh."
     ],
     "ms": {
       "title": "Mission Statement",
-      "statement":"We are committed to providing nutrient rich foods and minimizing the impact of agriculture on its environment. As a result, our products have both short-term and long-term benefits to you."
+      "statement":"We are committed to helping produce nutrient rich foods and minimizing the impact of agriculture on the environment. As a result, our products have both short-term and long-term benefits for you. Here you will also find the best quality and lowest priced tissue culture seeds and plants. All of our services are available in the states of Punjab, Haryana and Himachal."
     }
   },
   "dripIrrigation": {
     "title": [ "Quality", "Fertigation" ],
+    "metaTitle": "Drip Irrigation",
+    "description": "Our budget-friendly Drip Irrigation lines and tape solutions maximise agricultural produce and minimise impact on environment. You also save on resources. Our team is highly experienced and can handle diverse environments and needs.",
+    "keywords": [
+      "best", "quality", "low-price", "fertigation", "drip-lines", "pipes",
+      "drip-tape", "service", "farming", "high-yield", "save-water",
+      "punjab", "haryana", "himachal"
+    ],
     "points": [
       {
         "title": "Maximize Yield",
@@ -59,10 +73,13 @@
         ]
       }
     ],
-    "ps": "Agronomic support and Excellent post-sales service"
+    "ps": "Agronomic support and Excellent post-sales service. All services are offered in Punjab, Haryana and Himachal Pradesh."
   },
   "tissueCulture": {
     "title": [ "Cutting", "Edge" ],
+    "metaTitle": "Tissue Culture",
+    "description": "We have the best quality and lowest priced tissue culture plants and seeds for Banana, Potato, Strawberry, Sugarcane, Kiwi, Gerbera, Pipal, Kalanchoe, Succulents and Plowinia in Punjab, Haryana and Himachal Pradesh.",
+    "keywords": ["tissue culture", "seeds", "plants", "best", "quality", "lowest price", "farming", "punjab", "haryana", "himachal"],
     "points": [
       {
         "title": "Disease Free Cultivars",
@@ -83,6 +100,6 @@
     "tm": "Traditional Method",
     "om": "Our Method",
     "ca-title": "Currently Available Cultivars",
-    "ca-list": ["Strawberry", "Banana", "Potato Minitubers", "Potato Microtubers", "Sugarcane"]
+    "ca-list": ["Banana", "Potato Minitubers", "Potato Microtubers", "Strawberry", "Sugarcane", "Kiwi", "Gerbera", "Pipal", "Kalanchoe", "Succulent", "Plowinia"]
   }
 }

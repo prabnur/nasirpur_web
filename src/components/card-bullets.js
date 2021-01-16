@@ -17,7 +17,7 @@ export default ({ reversed, card}) => (
       <div tw="mt-12">
         {card.bullets.map((desc, idx) =>
           <Point key={idx}>
-            <span tw="w-1/12"><CheckMarkBullet/></span>
+            <span tw="w-1/12 content-center pt-2"><CheckMarkBullet/></span>
             <Description>{desc}</Description>
           </Point>
         )}

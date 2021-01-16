@@ -6,6 +6,7 @@ import BackgroundImageFull, { TextHighlight } from '../components/background-ima
 import Header from '../components/header';
 import { GetText } from '../utils/text/textProvider';
 import Card from '../components/card';
+import SEO from '../components/seo';
 
 const Content = tw.div`mt-24 sm:mt-16`;
 
@@ -23,6 +24,11 @@ const TissueCulture = () => {
         childImageSharp {
           fluid(maxWidth: 1920, maxHeight: 1080, quality: 90) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+          resize(width: 1200) {
+            src
+            height
+            width
           }
         }
       }
@@ -68,7 +74,17 @@ const TissueCulture = () => {
     descriptionOM: text['points'][idx]['+']
   }));
 
+  const keywords = text['keywords'].concat(text['ca-list'])
+
   return (<>
+    <SEO
+      title={text['metaTitle']}
+      description={text['description']}
+      image={query.bg.childImageSharp.resize}
+      keywords={keywords}
+      lang={getText('htmlLangCode')}
+    />
+
     <BackgroundImageFull fluid={bg} title="TissueCultureBG">
       <Header section='TC'/>
       <div tw="mt-32 ml-16">
@@ -79,7 +95,7 @@ const TissueCulture = () => {
 
     <div tw="relative">
       <Content>
-        {cards.map((card, idx) => <Card key={idx} reversed={idx%2==1} card={card}/>)}
+        {cards.map((card, idx) => <Card key={idx} reversed={idx%2===1} card={card}/>)}
       </Content>
     </div>
 
