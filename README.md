@@ -35,9 +35,3 @@ This is a website for Paramjit Singh Bal who owns Nasirpur Farms. Please see [ga
 - [Steve Schoger](https://twitter.com/steveschoger) for the Menu and Close icons from from his project [Hero Icons](https://heroicons.com/)
 
 - Alexander Kahlkopf for the Check Mark, WhatsApp and Email icons from his project [iconmonstr](https://iconmonstr.com/)
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/prabnur/nasirpur_web.git)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/prabnur/nasirpur_web.git)
