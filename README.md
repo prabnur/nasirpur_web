@@ -13,10 +13,11 @@ This is a website for Paramjit Singh Bal who owns Nasirpur Farms. Please see [ga
   - Optimized image loading
   - Server Side Rendering
   - Blur / Traced SVG form of image is visible while image is loaded or before it for a nice transition
-- Implemented SEO through
-  - Site Metadata
+- Designed a logo using `Krita`. Can be found at `src/images/nasirpur_farms_logo.png`.
+- Implemented **SEO** to organically increase traffic from Google through
+  - Site **Metadata** for `Google`'s web crawler
   - **Social Media Cards** for `Twitter`, `Slack`, `Facebook` for each page
-  - **JSON-LD** Structured Data for `Google` and `Apple`
+  - **JSON-LD** Structured Data for `Google` and `Apple` that gives information about business
   - Human & Machine readable **sitemap**, courtesy of [advanced-seo-plugin](https://www.gatsbyjs.com/plugins/gatsby-plugin-advanced-sitemap/)
 
 ## 🚀 Technologies Used
