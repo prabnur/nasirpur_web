@@ -1,7 +1,7 @@
 import React from 'react';
 import tw from 'twin.macro';
 
-import contactDetails from './contact-details.json';
+import contactDetails from '../utils/json/contact-details.json';
 import { MailIcon, WhatsAppIcon } from '../utils/icons';
 
 const Button = tw.button`
