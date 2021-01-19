@@ -86,6 +86,7 @@ const DripIrrigation = () => {
       image={query.bg.childImageSharp.resize}
       keywords={text['keywords']}
       lang={getText('htmlLangCode')}
+      url='https://www.nasirpur.farm/dripIrrigation/'
     />
 
     <BackgroundImageFull fluid={bg} title="DripIrrigationBG">
@@ -96,7 +97,7 @@ const DripIrrigation = () => {
       </div>
     </BackgroundImageFull>
 
-    {cards.map((card, idx) => <Card key={idx} reversed={idx%2==1} card={card}/>)}
+    {cards.map((card, idx) => <Card key={idx} reversed={idx%2===1} card={card}/>)}
 
     <div tw="pb-20"></div>
   </>);

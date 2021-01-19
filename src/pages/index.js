@@ -9,6 +9,13 @@ import Header from '../components/header';
 import BackgroundImageFull from '../components/background-image-full';
 import SEO from '../components/seo';
 
+import contactDetails from '../utils/json/contact-details.json';
+import aboutMeLD from '../utils/json/aboutMeLD.json';
+import logoLD from '../utils/json/logoLD.json'
+aboutMeLD['telephone'] = contactDetails['number'];
+
+const siteURl = 'https://www.nasirpur.farm';
+
 const Image = tw(BackgroundImage)`
   rounded w-10/12 md:w-11/12 lg:w-10/12 xl:w-9/12 
   h-48 mbl:h-64 sm:h-80 six:h-100 md:h-124 lg:h-144 xl:h-screen bg-cover bg-center mx-auto
@@ -21,8 +28,9 @@ const AboutMe = () => {
   const getText = useContext(GetText);
   const text = getText('aboutMe')
   const isBGDesktop = useMediaQuery({ minWidth: 662 });
-
-  const { bg, bg_mb, am } = useStaticQuery(graphql`
+  const siteUrl = 'https://www.nasirpur.farm';
+  
+  const { bg, bg_mb, logo, am } = useStaticQuery(graphql`
     query {
       bg: file(relativePath: { eq: "aboutMeCropped.jpg" }) {
         childImageSharp {
@@ -42,6 +50,21 @@ const AboutMe = () => {
           fluid(maxWidth: 500, quality: 90) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
+          resize(width: 1520) {
+            src
+            height
+            width
+          }
+        }
+      }
+
+      logo: file(relativePath: { eq: "nasirpur_farms_logo.png"}) {
+        childImageSharp {
+          resize(width: 512) {
+            src
+            width
+            height
+          }
         }
       }
 
@@ -54,14 +77,17 @@ const AboutMe = () => {
       }
     }
   `)
-
+  aboutMeLD['image'] = `${siteUrl}${bg_mb.childImageSharp.resize.src}`;
+  logoLD['logo'] = `${siteUrl}${logo.childImageSharp.resize.src}`;
   return <>
     <SEO
       title={text['title']}
       description={text['description']}
       image={bg.childImageSharp.resize}
+      structured_data={[aboutMeLD, logoLD]}
       keywords={text['keywords']}
       lang={getText('htmlLangCode')}
+      url={siteUrl}
     />
 
     <BackgroundImageFull fluid={(isBGDesktop ? bg : bg_mb).childImageSharp.fluid} title="Paramjit Singh Bal">

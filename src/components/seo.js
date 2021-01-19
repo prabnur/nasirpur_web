@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ title_prop, description, image: metaImage, keywords, lang_prop }) {
+function SEO({ title_prop, description, image: metaImage, keywords, lang_prop, structured_data, url_prop }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -20,6 +20,7 @@ function SEO({ title_prop, description, image: metaImage, keywords, lang_prop })
             description
             author
             keywords
+            siteUrl
           }
         }
       }
@@ -30,11 +31,16 @@ function SEO({ title_prop, description, image: metaImage, keywords, lang_prop })
   const metaDescription = description || site.siteMetadata.description
   const metaKeywords = keywords || site.siteMetadata.keywords
   const lang = lang_prop || 'en'
+  const url = url_prop || site.siteMetadata.siteUrl
 
-  const image =
-  metaImage && metaImage.src
-    ? `${site.siteMetadata.siteUrl}${metaImage.src}`
-    : null
+  const image = metaImage && metaImage.src ?
+    `${site.siteMetadata.siteUrl}${metaImage.src}`
+    :
+    null
+  
+  if (title === 'Nasirpur Farms') {
+
+  }
 
   return (
     <Helmet
@@ -67,11 +73,10 @@ function SEO({ title_prop, description, image: metaImage, keywords, lang_prop })
           property: `og:type`,
           content: `website`,
         },
-        // TO:DO add URL once website is deployed and hosted
-        // {
-        //   property: `og:url`,
-        //   content: title,
-        // },
+        {
+          property: `og:url`,
+          content: url,
+        },
 
         // Put Twitter Username below or twitter:creator:id
         // {
@@ -114,7 +119,13 @@ function SEO({ title_prop, description, image: metaImage, keywords, lang_prop })
           },
         ]
       )}
-    />
+    >{structured_data &&
+      structured_data.map((ld) =>
+        <script type="application/ld+json">
+          {JSON.stringify(ld)}
+        </script>
+      )}
+    </Helmet>
   )
 }
 

@@ -31,7 +31,7 @@ module.exports = {
         theme_color: `#663399`,
         useMozJpeg: true, // Build time increase at the expense of quality
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/nasirpur_farms_logo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

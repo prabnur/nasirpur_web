@@ -83,6 +83,7 @@ const TissueCulture = () => {
       image={query.bg.childImageSharp.resize}
       keywords={keywords}
       lang={getText('htmlLangCode')}
+      url='https://www.nasirpur.farm/tissueCulture/'
     />
 
     <BackgroundImageFull fluid={bg} title="TissueCultureBG">

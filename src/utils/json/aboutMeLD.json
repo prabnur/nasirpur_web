@@ -1,0 +1,60 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GardenStore",
+  "@id": "https://nasirpur.farm",
+  "name": "Nasirpur Farm",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2 Nasirpur Farms opposite Punjabi University",
+    "addressLocality": "Patiala",
+    "addressRegion": "Punjab",
+    "postalCode": "147002",
+    "addressCountry": "IN"
+  },
+  "areaServed": [
+    {
+      "@type": "GeoShape",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Punjab",
+        "addressCountry": "IN"
+      }
+    },
+    {
+      "@type": "GeoShape",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Haryana",
+        "addressCountry": "IN"
+      }
+    },
+    {
+      "@type": "GeoShape",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Himachal Pradesh",
+        "addressCountry": "IN"
+      }
+    }
+  ],
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 30.355953,
+    "longitude": 76.462163
+  },
+  "url": "http://www.nasirpur.farm",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "8:00",
+      "closes": "17:00"
+    }
+  ]
+}

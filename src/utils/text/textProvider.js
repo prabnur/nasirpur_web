@@ -13,8 +13,10 @@ const languageText = {
   'pb': pb
 }
 
-export const ChangeLanguage = React.createContext();
-export const GetText = React.createContext();
+const initState = () => ":)";
+
+const ChangeLanguage = React.createContext(initState);
+const GetText = React.createContext((key) => languageText['en'][key]);
 
 // A Wrapper functional component that provides text and keeps track of the current language
 const TextContextProvider = ({children}) => {
@@ -31,3 +33,5 @@ const TextContextProvider = ({children}) => {
 }
 
 export default TextContextProvider;
+
+export { GetText, ChangeLanguage };
