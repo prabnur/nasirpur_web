@@ -3,33 +3,33 @@
   "option": "EN",
   "htmlLangCode": "pa",
   "buttonText": {
-    "AM": "ਸਾਡੇ ਬਾਰੇ",
+    "AM": "ਮੇਰੇ ਬਾਰੇ",
     "CO": "ਸੰਪਰਕ ਕਰੋ",
-    "DI": "ਡ੍ਰਿਪ ਇਰੀਗੇਸ਼ਨ",
+    "DI": "ਤੁਪਕਾ ਪ੍ਰਣਾਲੀ",
     "TC": "ਟਿਸ਼ੂ ਕਲਚਰ"
   },
   "aboutMe": {
-    "title": ["Nasirpur", "Farms"],
+    "title": "ਨਸੀਰਪੁਰ ਫਾਰਮ",
     "description": "We have the best quality and lowest priced tissue culture plants and seeds in Punjab, Haryana and Himachal Pradesh. Our budget-friendly Drip Irrigation lines and tape solutions maximise agricultural produce and minimise impact on environment.",
     "keywords": [
       "tissue culture", "seeds", "plants", "best", "quality", "low price",
       "drip", "irrigation", "drip-lines", "drip-tape", "service", "farming",
       "punjab", "haryana", "himachal"
     ],
-    "greeting": "Welcome",
+    "greeting": "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ",
     "intro": [
-      "I am Paramjit Singh Bal, an Agriculturist.",
-      "I have more than 20 years of experience in Plant Tissue Culture and Drip Irrigation Systems solutions.",
-      "I had the honour of installing such a solution for the Chief Minister of Punjab, Capt. Amarinder Singh."
+      "ਮੈਂ ਪਰਮਜੀਤ ਸਿੰਘ ਬਲ, ਪੰਜਾਬ ਦਾ ਇੱਕ ਅਗਾਂਹ ਵਧੂ ਕਿਸਾਨ ਹਾਂ।",
+      "ਪੌਦਿਆਂ ਦੇ ਟਿਸ਼ੂ ਕਲਚਰ ਅਤੇ ਤੁਪਕਾ ਪ੍ਰਣਾਲੀ ਰਾਹੀਂ ਸਿੰਜਾਈ ਵਿਚ ਮੇਰਾ ਪੱਚੀ ਸਾਲ ਦਾ ਤਜੁਰਬਾ ਹੈ।",
+      "ਮੇਰੇ ਲਈ ਇਹ ਬੜੇ ਮਾਣ ਦੀ ਗੱਲ ਹੈ ਕਿ ਮੈਂ ਇਹੋ ਜਿਹਾ ਇੱਕ ਸਿਸਟਮ ਸਾਡੇ ਮਾਣਯੋਗ ਮੁੱਖ ਮੰਤਰੀ ਪੰਜਾਬ ਕੈਪਟਨ ਅਮਰਿੰਦਰ ਸਿੰਘ ਜੀ ਦੇ ਫਾਰਮ ਤੇ ਵੀ ਲਗਾਇਆ ਹੈ।"
     ],
     "ms": {
-      "title": "Mission Statement",
-      "statement":"We are committed to providing nutrient rich foods and minimizing the impact of agriculture on its environment. As a result, our products have both short-term and long-term benefits to you."
+      "title": "ਮਿਸ਼ਨ",
+      "statement":"ਅੱਸੀਂ ਤੁਹਾਡੀ ਪੋਸ਼ਣ ਭਰਪੂਰ ਫ਼ਸਲ ਉਗਾਉਣ ਵਿਚ ਮੱਦਦ ਕਰਨ ਅਤੇ ਖੇਤੀ ਦੇ ਪਰਿਆਵਰਣ ਉੱਤੇ ਪੈਂਦੇ ਬੁਰੇ ਪ੍ਰਭਾਵ ਨੂੰ ਘਟਾਉਣ ਲਈ ਵਚਨਬੱਧ ਹਾਂ। ਸਾਡੇ ਉਤਪਾਦਨਾਂ ਦਾ ਤੁਹਾਨੂੰ ਨਾ ਸਿਰਫ ਤੁਰੰਤ ਲਾਭ ਮਿਲੇਗਾ ਬਲਕਿ ਲੰਮੇਂ ਸਮੇ ਵਿਚ ਵੀ ਫਾਇਦਾ ਹੋਵੇਗਾ। ਸਾਡੇ ਕੋਲ ਤੁਹਾਨੂੰ ਉੱਤਮ ਕਵਾਲਿਟੀ ਦੇ, ਪਰ ਘਟੋ ਘਟ ਕੀਮਤ ਦੇ ਟਿਸ਼ੂ ਕਲਚਰ ਵਾਲੇ ਬੀਜ ਅਤੇ ਪੌਦੇ ਮਿਲਣਗੇ। ਸਾਡੀਆਂ ਸਾਰੀਆਂ ਸੇਵਾਂਵਾਂ, ਤਿੰਨੋ ਰਾਜਾਂ, ਪੰਜਾਬ ਹਰਿਆਣਾ ਅਤੇ ਹਿਮਾਚਲ ਪ੍ਰਦੇਸ਼ ਵਿੱਚ ਉਪਲਬਧ ਹਨ।"
     }
   },
   "dripIrrigation": {
-    "title": [ "Quality", "Fertigation" ],
-    "metaTitle": "Drip Irrigation",
+    "title": [ "ਮਿਆਰੀ", "ਫਰਟੀਗੇਸ਼ਨ" ],
+    "metaTitle": "ਤੁਪਕਾ ਪ੍ਰਣਾਲੀ",
     "description": "Our budget-friendly Drip Irrigation lines and tape solutions maximise agricultural produce and minimise impact on environment. You also save on resources. Our team is highly experienced and can handle diverse environments and needs.",
     "keywords": [
       "best", "quality", "low-price", "fertigation", "drip-lines", "pipes",
@@ -38,68 +38,68 @@
     ],
     "points": [
       {
-        "title": "Maximize Yield",
+        "title": "ਅਧਿਕਤਮ ਪੈਦਾਵਾਰ",
         "bullets": [
-          "Perfectly Balanced Ratio of air, water and nutrients in the root zone.",
-          "Maximum Quality",
-          "Maximum Yield"
+          "ਜੜਾਂ ਵਿਚ ਹਵਾ ਪਾਣੀ ਅਤੇ ਪੋਸ਼ਣ ਦੀ ਸਹੀ ਮਿਕਦਾਰ।",
+          "ਉੱਤਮ ਕਵਾਲਿਟੀ",
+          "ਭਰਪੂਰ ਪੈਦਾਵਾਰ"
         ]
       },
       {
-        "title": "Huge Savings",
+        "title": "ਭਰਪੂਰ ਮੁਨਾਫ਼ਾ",
         "bullets": [
-          "Reduce water consumption.",
-          "Save on labour costs.",
-          "Minimise use of herbicides and pesticides."
+          "ਘਟ ਪਾਣੀ ਦੀ ਵਰਤੋਂ।",
+          "ਮਜ਼ਦੂਰੀ ਲਾਗਤ ਵਿਚ ਕਮੀ",
+          "ਨਦੀਨ-ਨਾਸ਼ਕ ਅਤੇ ਕੀਟਨਾਸ਼ਕ ਦਵਾਈਆਂ ਦੀ ਘਟ ਵਰਤੋਂ।"
         ]
       },
       {
-        "title": "Established Practise",
+        "title": "ਪ੍ਰਮਾਣਿਤ ਕਾਰਜ",
         "bullets": [
-          "20+ years of experience",
-          "Expert Design.",
-          "Premium Materials.",
-          "Masterful Execution.",
-          "1000+ acres of land processed."
+          "ਵੀਹ ਤੋਂ ਜ਼ਿਆਦਾ ਸਾਲ ਦਾ ਤਜੁਰਬਾ",
+          "ਮਾਹਿਰ ਦੇ ਡਿਜ਼ਾਈਨ",
+          "ਉਚ ਕਵਾਲਿਟੀ ਦਾ ਸਮਾਨ",
+          "ਮਿਆਰੀ ਕੰਮ",
+          "ਹਜ਼ਾਰ ਤੋਂ ਵੱਧ ਏਕੜ ਲਗਾ ਚੁਕੇ"
         ]
       },
       {
-        "title": "Custom Tailored",
+        "title": "ਲੋੜ ਅਨੁਸਾਰ ਤਿਆਰ ਡਿਜ਼ਾਈਨ",
         "bullets": [
-          "Tailored separately to both corporates and individuals.",
-          "Smooth execution for challenging terrain such as hills.",
-          "Geared for both open fields and protected cultivations",
-          "Excellent post-sales service"
+          "ਕੰਪਨੀਆਂ ਅਤੇ ਕਿਸਾਨ ਦੋਂਨਾਂ ਲਈ",
+          "ਪਹਾੜੀ ਖੇਤਰ ਲਈ ਵੀ ਵਧੀਆ ਡਿਜ਼ਾਈਨ",
+          "ਖੁੱਲੇ ਖੇਤਾਂ ਅਤੇ ਪੋਲੀ ਹਾਉਸ ਕਾਸ਼ਤ ਦੋਨਾਂ ਲਈ ਉਚਿਤ",
+          "ਉੱਤਮ ਵਿਕਰੀ ਉਪਰੰਤ ਸੇਵਾ"
         ]
       }
     ],
-    "ps": "Agronomic support and Excellent post-sales service. All services are offered in Punjab, Haryana and Himachal Pradesh."
+    "ps": "ਉੱਤਮ ਅਗਰੋਨੋਮੀ ਅਤੇ ਵਿਕਰੀ ਉਪਰੰਤ ਸਹਾਇਤਾ। ਸਾਰੀਆਂ ਸੇਵਾਂਵਾਂ ਪੰਜਾਬ ਹਰਿਆਣਾ ਅਤੇ ਹਿਮਾਚਲ ਵਿਚ ਉਪਲਬਧ।"
   },
   "tissueCulture": {
-    "title": [ "Cutting", "Edge" ],
+    "title": [ "ਅਤਿ", "ਆਧੁਨਿਕ"],
     "metaTitle": "Tissue Culture",
-    "description": "We have the best quality and lowest priced tissue culture plants and seeds for Banana, Potato, Strawberry, Sugarcane, Kiwi, Gerbera, Pipal, Kalanchoe, Succulents and Plowinia in Punjab, Haryana and Himachal Pradesh.",
+    "description": "We have the best quality and lowest priced tissue culture plants and seeds for Banana, Potato, Strawberry, Sugarcane, Kiwi, Gerbera, Pipal, Kalanchoe, Succulents and Paulownia in Punjab, Haryana and Himachal Pradesh.",
     "keywords": ["tissue culture", "seeds", "plants", "best", "quality", "lowest price", "farming", "punjab", "haryana", "himachal"],
     "points": [
       {
-        "title": "Disease Free Cultivars",
-        "-": "Plants where part of the plant is a seed, gather pathogens from the environment. This increases every generation.",
-        "+": "Our method guarantees disease-free plants."
+        "title": "ਰੋਗ ਰਹਿਤ ਪੌਦੇ",
+        "-": "ਜਿਹੜੇ ਪੌਦਿਆਂ ਵਿੱਚ ਉਹਨਾਂ ਦਾ ਆਪਣਾ ਹਿੱਸਾ ਹੀ ਬੀਜ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ, ਉਹ ਵਾਤਾਵਰਣ ਵਿਚੋਂ ਬਿਮਾਰੀਆਂ ਦੇ ਕੀਟਾਣੂਆਂ ਨਾਲ ਭਰ ਜਾਂਦੇ ਹਨ ਅਤੇ ਇਹ ਪੀੜੀ ਦਰ ਪੀੜੀ ਵੱਧਦੇ ਜਾਂਦੇ ਹਨ।",
+        "+": "ਸਾਡੇ ਢੰਗ ਨਾਲ ਬਣਾਏ ਬੂਟੇ ਸ਼ਰਤੀਆ ਤੌਰ ਤੇ ਰੋਗ ਮੁਕਤ ਹੁੰਦੇ ਹਨ।"
       },
       {
-        "title": "Rapid Cultivar Production",
-        "-": "Plant cultivar is multiplied over the time period of several crop seasons for distribution.",
-        "+": "Our method can mass produce cultivars from a single bud around the whole year!"
+        "title": "ਨਸਲੀ ਪੌਦਿਆਂ ਦੀ ਤੇਜ਼ ਉਤਪਤੀ।",
+        "-": "ਆਮ ਤੌਰ ਤੇ ਨਸਲੀ ਪੌਦਿਆਂ ਦੀ ਪੌਦ ਵਧਾਉਣ ਲਈ ਕਈ ਸੀਜ਼ਨ ਲੱਗਦੇ ਹਨ।",
+        "+": "ਸਾਡੇ ਢੰਗ ਨਾਲ ਇੱਕੋ ਡੋਡੀ ਤੋਂ ਸਾਰਾ ਸਾਲ ਬੂਟੇ ਵਧਾਏ ਜਾਂਦੇ ਹਨ!"
       },
       {
-        "title": "Resilient Pure Lines",
-        "-": "Back crossing of the same parent results in weak offspring.",
-        "+": "We can multiply the cells of a chosen cultivar to maintain strong offspring."
+        "title": "ਸਿਹਤਮੰਦ ਖਾਲਸ ਨਸਲਾਂ।",
+        "-": "ਬੈਕ ਕਰਾਸਿੰਗ ਨਾਲ ਤਿਆਰ ਕੀਤੇ ਬੂਟੇ ਕਮਜ਼ੋਰ ਹੁੰਦੇ ਹਨ।",
+        "+": "ਅਸੀਂ ਚੁਣੀ ਨਸਲ ਦੇ ਬੂਟੇ ਦੇ ਟਿਸ਼ੂ ਤੋਂ ਸਿਹਤਮੰਦ  ਬੂਟੇ ਤਿਆਰ ਕਰ ਸਕਦੇ ਹਾਂ।"
       }
     ],
-    "tm": "Traditional Method",
-    "om": "Our Method",
-    "ca-title": "Currently Available Cultivars",
-    "ca-list": ["Strawberry", "Banana", "Potato Minitubers", "Potato Microtubers", "Sugarcane"]
+    "tm": "ਰਵਾਇਤੀ ਢੰਗ",
+    "om": "ਸਾਡਾ  ਢੰਗ",
+    "ca-title": "ਅੱਜਕਲ ਉਪਲਬਧ ਕਿਸਮਾਂ",
+    "ca-list": ["ਕੇਲਾ", "ਆਲੂ ਮਿੰਨੀ ਟੀਊਬਰ", "ਆਲੂ ਮਾਈਕਰੋ ਟੀਊਬਰ", "ਸਟ੍ਰਾਅਬੇਰੀ", "ਗੰਨਾ", "ਕੀਵੀ", "ਜੇਰਬਰਾ", "ਪਿਪਲ", "ਕਾਲੇਨਚੋ", "ਸਕਕੁਲੇਂਟਸ", "ਪੋਲੋਨੀਆ"]
   }
 }

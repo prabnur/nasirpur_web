@@ -24,7 +24,7 @@
     ],
     "ms": {
       "title": "Mission Statement",
-      "statement":"We are committed to helping produce nutrient rich foods and minimizing the impact of agriculture on the environment. As a result, our products have both short-term and long-term benefits for you. Here you will also find the best quality and lowest priced tissue culture seeds and plants. All of our services are available in the states of Punjab, Haryana and Himachal."
+      "statement":"We are committed to helping produce nutrient rich foods and minimizing the impact of agriculture on the environment. As a result, our products have both short-term and long-term benefits for you. Here you will find the best quality and lowest priced tissue culture seeds and plants. All of our services are available in the states of Punjab, Haryana and Himachal."
     }
   },
   "dripIrrigation": {
@@ -60,13 +60,13 @@
           "Expert Design.",
           "Premium Materials.",
           "Masterful Execution.",
-          "1000+ acres of land processed."
+          "1000+ acres of land installed."
         ]
       },
       {
         "title": "Custom Tailored",
         "bullets": [
-          "Tailored separately to both corporates and individuals.",
+          "Tailored separately to both companies and individuals.",
           "Smooth execution for challenging terrain such as hills.",
           "Geared for both open fields and protected cultivations",
           "Excellent post-sales service"
@@ -78,7 +78,7 @@
   "tissueCulture": {
     "title": [ "Cutting", "Edge" ],
     "metaTitle": "Tissue Culture",
-    "description": "We have the best quality and lowest priced tissue culture plants and seeds for Banana, Potato, Strawberry, Sugarcane, Kiwi, Gerbera, Pipal, Kalanchoe, Succulents and Plowinia in Punjab, Haryana and Himachal Pradesh.",
+    "description": "We have the best quality and lowest priced tissue culture plants and seeds for Banana, Potato, Strawberry, Sugarcane, Kiwi, Gerbera, Pipal, Kalanchoe, Succulents and Paulownia in Punjab, Haryana and Himachal Pradesh.",
     "keywords": ["tissue culture", "seeds", "plants", "best", "quality", "lowest price", "farming", "punjab", "haryana", "himachal"],
     "points": [
       {
@@ -87,8 +87,8 @@
         "+": "Our method guarantees disease-free plants."
       },
       {
-        "title": "Rapid Cultivar Production",
-        "-": "Plant cultivar is multiplied over the time period of several crop seasons for distribution.",
+        "title": "Rapid Cultivar Multiplication",
+        "-": "Usually plant cultivar is multiplied over the time period of several crop seasons for distribution.",
         "+": "Our method can mass produce cultivars from a single bud around the whole year!"
       },
       {
@@ -99,7 +99,7 @@
     ],
     "tm": "Traditional Method",
     "om": "Our Method",
-    "ca-title": "Currently Available Cultivars",
-    "ca-list": ["Banana", "Potato Minitubers", "Potato Microtubers", "Strawberry", "Sugarcane", "Kiwi", "Gerbera", "Pipal", "Kalanchoe", "Succulent", "Plowinia"]
+    "ca-title": "Currently Available Seeds",
+    "ca-list": ["Banana", "Potato Minitubers", "Potato Microtubers", "Strawberry", "Sugarcane", "Kiwi", "Gerbera", "Pipal", "Kalanchoe", "Succulent", "Paulownia"]
   }
 }
