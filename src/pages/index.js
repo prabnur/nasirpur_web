@@ -22,7 +22,7 @@ const Image = tw(BackgroundImage)`
 `;
 
 const TextChunks = tw.div`flex-auto`;
-const TextChunk = tw.p`block mt-12 w-10/12 mx-auto text-xl md:text-2xl lg:text-3xl`;
+const TextChunk = tw.p`block mt-11 w-10/12 mx-auto text-xl md:text-2xl lg:text-3xl`;
 
 const AboutMe = () => {
   const getText = useContext(GetText);
