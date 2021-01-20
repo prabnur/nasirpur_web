@@ -19,7 +19,9 @@ const mailLInk = contactDetails['mailPrefix'] + contactDetails['email'];
 export const Mail = () => (
   <Container>
     <span tw="content-center pt-2">
-      <MailIcon/>
+      <a href={mailLInk} target="_blank" rel="noopener noreferrer">
+        <MailIcon/>
+      </a>
     </span>
     <a href={mailLInk} target="_blank" rel="noopener noreferrer">
       <Button tw="text-lg hover:bg-purple-800">
@@ -32,7 +34,9 @@ export const Mail = () => (
 export const WhatsApp = () => (
   <Container>
     <span tw="content-center pt-2">
-      <WhatsAppIcon/>
+      <a href={waLink} target="_blank" rel="noopener noreferrer">
+        <WhatsAppIcon/>
+      </a>
     </span>
     <a href={waLink} target="_blank" rel="noopener noreferrer">
       <Button tw="text-base hover:bg-green-800">
