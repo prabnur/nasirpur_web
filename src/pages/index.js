@@ -14,7 +14,7 @@ import aboutMeLD from '../utils/json/aboutMeLD.json';
 import logoLD from '../utils/json/logoLD.json'
 aboutMeLD['telephone'] = contactDetails['number'];
 
-const siteURl = 'https://nasirpur.farm';
+const siteUrl = 'https://nasirpur.farm';
 
 const Image = tw(BackgroundImage)`
   rounded w-10/12 md:w-11/12 lg:w-10/12 xl:w-9/12 
