@@ -8,7 +8,7 @@ module.exports = {
     keywords: ['tissue culture', 'seeds', 'plants', 'best', 'quality', 'lowest price', 'fertigation', 'drip', 'irrigation', 'drip-lines', 'drip-tape',
       'service', 'farming', 'punjab', 'haryana', 'himachal'],
     author: `Paramjit Bal`,
-    siteUrl: `https://www.nasirpur.farm`
+    siteUrl: `https://nasirpur.farm`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -86,7 +86,7 @@ const DripIrrigation = () => {
       image={query.bg.childImageSharp.resize}
       keywords={text['keywords']}
       lang={getText('htmlLangCode')}
-      url='https://www.nasirpur.farm/dripIrrigation/'
+      url='https://nasirpur.farm/dripIrrigation/'
     />
 
     <BackgroundImageFull fluid={bg} title="DripIrrigationBG">

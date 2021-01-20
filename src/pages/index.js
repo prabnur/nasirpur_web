@@ -14,7 +14,7 @@ import aboutMeLD from '../utils/json/aboutMeLD.json';
 import logoLD from '../utils/json/logoLD.json'
 aboutMeLD['telephone'] = contactDetails['number'];
 
-const siteURl = 'https://www.nasirpur.farm';
+const siteURl = 'https://nasirpur.farm';
 
 const Image = tw(BackgroundImage)`
   rounded w-10/12 md:w-11/12 lg:w-10/12 xl:w-9/12 
@@ -28,7 +28,7 @@ const AboutMe = () => {
   const getText = useContext(GetText);
   const text = getText('aboutMe')
   const isBGDesktop = useMediaQuery({ minWidth: 662 });
-  const siteUrl = 'https://www.nasirpur.farm';
+  const siteUrl = 'https://nasirpur.farm';
   
   const { bg, bg_mb, logo, am } = useStaticQuery(graphql`
     query {
