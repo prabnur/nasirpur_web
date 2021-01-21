@@ -119,12 +119,21 @@ function SEO({ title_prop, description, image: metaImage, keywords, lang_prop, s
           },
         ]
       )}
-    >{structured_data &&
+    >\
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJB0LMDJHG"></script>
+    <script>{`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FJB0LMDJHG');
+    `}</script>
+    {structured_data &&
       structured_data.map((ld) =>
         <script type="application/ld+json">
           {JSON.stringify(ld)}
         </script>
-      )}
+      )
+    }
     </Helmet>
   )
 }
