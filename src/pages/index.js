@@ -22,7 +22,7 @@ const Image = tw(BackgroundImage)`
 `;
 
 const TextChunks = tw.div`flex-auto`;
-const TextChunk = tw.p`block mt-11 w-10/12 mx-auto text-xl md:text-2xl lg:text-3xl`;
+const TextChunk = tw.p`block mt-6 w-10/12 mx-auto text-xl md:text-2xl lg:text-3xl`;
 
 const AboutMe = () => {
   const getText = useContext(GetText);
@@ -96,7 +96,7 @@ const AboutMe = () => {
     
     <TextChunks tw="mt-8">
       <h1 tw="block text-center text-green-900">{text['title']}</h1>
-      <h2 tw="block text-center font-bold mt-10">{text['greeting']}</h2>
+      <h2 tw="block text-center font-bold mt-10 mb-10">{text['greeting']}</h2>
       {text['intro'].map((item, idx) => 
         <TextChunk key={idx}>
           {item}
