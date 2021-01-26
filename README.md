@@ -15,7 +15,7 @@ The website is live at: [nasirpur.farm](https://nasirpur.farm/)
   - Optimized image loading
   - Server Side Rendering
   - Blur / Traced SVG form of image is visible while image is loaded or before it for a nice transition
-- Designed a logo using `Krita`. Can be found at `src/images/nasirpur_farms_logo.png`.
+- Designed a logo using `Krita`. Can be found at [here](src/images/nasirpur_farms_logo.png).
 - Implemented **SEO** to organically increase traffic from Google through
   - Site **Metadata** for `Google`'s web crawler
   - **Social Media Cards** for `Twitter`, `Slack`, `Facebook` for each page
