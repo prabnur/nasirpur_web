@@ -27,7 +27,7 @@ The website is live at: [nasirpur.farm](https://nasirpur.farm/)
 1.  [React](https://reactjs.org/)
 1.  [Gatsby](https://www.gatsbyjs.com/)
 1.  [Tailwind CSS](https://tailwindcss.com/)
-1.  [AntD](https://ant.design/) for their modal _(lol)_. It can be imported selectively.
+1.  [AntD](https://ant.design/)
 
 ## 🙏 Acknowledgements
 
