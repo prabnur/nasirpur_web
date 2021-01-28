@@ -11,6 +11,7 @@ The website is live at: [nasirpur.farm](https://nasirpur.farm/)
 ## 🌟 Features
 
 - Responsive design for all screen sizes
+- Instant switch to Punjabi language
 - Enhanced image experience courtesy of [Gatsby-Image](https://www.gatsbyjs.com/plugins/gatsby-image/) and [Gatsby-Background-Image](https://www.gatsbyjs.com/plugins/gatsby-background-image/) that includes
   - Optimized image loading
   - Server Side Rendering
