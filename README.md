@@ -6,6 +6,8 @@
 
 This is a website for Paramjit Singh Bal who owns Nasirpur Farms. Please see [gatsby-cli](https://www.gatsbyjs.com/docs/gatsby-cli/) for commands to run a develop server or build.
 
+For M1 machines, please install [these](https://github.com/nuxt/image/issues/204#issue-837103392) dependencies before running `npm i`.
+
 The website is live at: [nasirpur.farm](https://nasirpur.farm/)
 
 ## 🌟 Features
