@@ -38,9 +38,10 @@
     "tailwindcss": "^1.8.4",
     "twin.macro": "^1.8.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["gatsby"],
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
